@@ -29,7 +29,7 @@ extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_STATUS);
 
   }
   @Test(priority=2,description="verifying the selected training type is dispalyed in the list")
-  public void setTrainingType() throws IOException {
+  public void setTrainingType() {
 	  objTraining=new TrainingPage(driver);
 	  String type=Constants.TRAININGTYPE_EXPECTED;
 objTraining.setTrainingType(type);
@@ -41,7 +41,7 @@ extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_TYPE);
 
   }
   @Test(priority=3,description="verifyning List All Trainers is displayed")
-  public void listAllTrainersDisplayed() throws IOException {
+  public void listAllTrainersDisplayed()  {
 	  objTraining=new TrainingPage(driver);
 	  objTraining.clickTrainingButton();
 objTraining.clicktrainersList();

@@ -3,6 +3,7 @@ package com.HRMS.Base;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.HRMS.Constants.Constants;
 
@@ -32,6 +33,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop=null;
    
+		@Test
 		public void testBase() {
 	  
 	  prop=new Properties();

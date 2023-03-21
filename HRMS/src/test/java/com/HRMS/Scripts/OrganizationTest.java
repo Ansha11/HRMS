@@ -21,7 +21,7 @@ public class OrganizationTest extends TestBase{
 	String sheet2=Constants.Sheet2;
 
 	@Test(priority=1,description="verify the selected Company")
-	public void verifyCompanyType() throws IOException {
+	public void verifyCompanyType()  {
 		objOrg=new OrganizationPage(driver);
 		objOrg.clickOrganization();
 		objOrg.clickCompany();
@@ -34,7 +34,7 @@ public class OrganizationTest extends TestBase{
 
 	}
 	@Test(priority=2,description="verify the  added person is displayed")
-	public void verifyAddedPersonDetails() throws IOException {
+	public void verifyAddedPersonDetails()  {
 		objOrg=new OrganizationPage(driver);
 		int regNumber=ExcelUtilities.getCellNumericData(1, 0, sheet2);
 		objOrg.setRegistrationNumber(regNumber);

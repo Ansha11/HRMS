@@ -1,8 +1,8 @@
 package com.HRMS.Constants;
 
 public class Constants {
-public static final String CONFIGPATH="/Users/Sanoob/Documents/workspace1/HRMS/src/main/resources/config.properties" ;
-public static final String CONFIGPATH_EXCELREADER="/Users/Sanoob/Documents/workspace1/HRMS/src/main/resources/ExcelReader/Book1.xlsx";
+public static final String CONFIGPATH="/Users/Sanoob/git/HRMS/HRMS/src/main/resources/config.properties" ;
+public static final String CONFIGPATH_EXCELREADER="/Users/Sanoob/git/HRMS/HRMS/src/main/resources/ExcelReader/TestData.xlsx";
 public static final String LOGO_PATH="/Users/Sanoob/Documents/logo.png";
 public static final String LOGIN_ACCOUNT_TEXT="Login to your account";
 public static final String  LOGIN_DEMOHRMS_TEXT="Demo HRMS";

@@ -20,7 +20,7 @@ public class StaffTest extends TestBase {
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
 	@Test(priority=1,description="Verifying entries selected",groups= {"smoke"})
-	public void checkEntries() {
+	public void validateEntriesCount() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickStaffButton();
 		objStaff.clickEmployeeButton();
@@ -42,7 +42,7 @@ public class StaffTest extends TestBase {
 
 	}
 	@Test(priority=3,description="Verify company details are displayed",groups= {"regression"})
-	public void selectedCompanyRecords() {
+	public void validateSelectedCompanyRecords() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickGetButton();
 		String dispMsgActual= objStaff.checkMessageDisplayed();

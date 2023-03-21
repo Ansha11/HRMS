@@ -20,7 +20,7 @@ public class ProjectManagerTest extends TestBase{
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
 	@Test(priority=1,description="verify the given project is listed")
-	  public void verifyProjectSearch() throws IOException {
+	  public void verifyProjectSearch()  {
 		  objProject =new ProjectManagerPage(driver);
 		  objProject.scrollWindow();
 		  objProject.clickProjectManager();
@@ -32,7 +32,7 @@ public class ProjectManagerTest extends TestBase{
 
 	}
   @Test(priority=2,description="verifying save button status")
-  public void verifySaveButtonStatus() throws IOException {
+  public void verifySaveButtonStatus()  {
 	  objProject =new ProjectManagerPage(driver);
 	  objProject.scrollWindow();
 	 objProject.addNewClientData();
@@ -42,7 +42,7 @@ public class ProjectManagerTest extends TestBase{
   }
   
   @Test(priority=3,description="verify the given country is selected")
-  public void verifyCountrySelection() throws IOException {
+  public void verifyCountrySelection()  {
 	  String name=RandomUtilities.getfName();
 	  String email=RandomUtilities.getRandomEmail();
 	  objProject.setName(name);

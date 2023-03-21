@@ -3,19 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.HRMS.Listeners.TestListener"/>
+    <listener class-name="com.HRMS.Listeners.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.HRMS.Scripts.FinanceTest">
+      <class name="com.HRMS.Scripts.LoginTest">
         <methods>
-          <include name="addAccountDetails"/>
-          <include name="checkAddNewAccountText"/>
+          <include name="verifyLoginValidUserValidPassword"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- com.HRMS.Scripts.FinanceTest -->
+      </class> <!-- com.HRMS.Scripts.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

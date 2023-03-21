@@ -37,7 +37,7 @@ public class LoginTest extends TestBase  {
 	
 	@Test(priority=1,description="Verifying LoginPage with valid username and invalid password",
 			retryAnalyzer=com.HRMS.Listeners.RetryAnalyzer.class)
-	public void verifyLoginValidUserInvalidPassword() throws IOException {
+	public void verifyLoginValidUserInvalidPassword()  {
 		objLogin=new LoginPage(driver);
 		String username=ExcelUtilities.getCellStringData(0, 0,sheet1);
 		int password=ExcelUtilities.getCellNumericData(0, 1,sheet1);
@@ -49,7 +49,7 @@ public class LoginTest extends TestBase  {
 		extentTest.get().log(Status.PASS, ExtentLogMessage.LOGIN_FAILED_MESSAGE);
 	}
 	@Test(priority=2,description="Verifying LoginPage with invalid username and valid password")
-	public void verifyLoginInvalidUserValidPassword() throws IOException {
+	public void verifyLoginInvalidUserValidPassword() {
 		objLogin=new LoginPage(driver);
 		objLogin.clearLoginFields();
 		String username=ExcelUtilities.getCellStringData(1, 0,sheet1);
@@ -63,7 +63,7 @@ public class LoginTest extends TestBase  {
 
 	}
 	@Test(priority=3,description="Verifying LoginPage with invalid username and invalid password",retryAnalyzer=com.HRMS.Listeners.RetryAnalyzer.class)
-	public void verifyLoginInvalidUserInvalidPassword() throws IOException {
+	public void verifyLoginInvalidUserInvalidPassword() {
 		objLogin=new LoginPage(driver);
 		objLogin.clearLoginFields();
 		String username=ExcelUtilities.getCellStringData(2, 0,sheet1);
@@ -77,7 +77,7 @@ public class LoginTest extends TestBase  {
 
 	}
 	@Test(priority=4,description="Verifying LoginPage with valid username and password",groups= {"smoke"})
-	public void verifyLoginValidUserValidPassword() throws IOException{
+	public void verifyLoginValidUserValidPassword() {
 		objLogin=new LoginPage(driver);
 		objLogin.clearLoginFields();
 		String username=ExcelUtilities.getCellStringData(3, 0,sheet1);

@@ -4,9 +4,6 @@
 	<listeners>
 		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
 	</listeners>
-	<listeners>
-		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
-		</listeners>
   <test thread-count="5" name="TestGrouping">
 	  <parameter name="browser" value="edge"></parameter>
 	  <groups>

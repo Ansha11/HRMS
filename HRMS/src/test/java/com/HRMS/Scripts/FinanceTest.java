@@ -27,7 +27,7 @@ public class FinanceTest extends TestBase {
 
   }
   @Test(priority=2,description="verify newly added account details are listed")
-  public void addAccountDetails() throws IOException {
+  public void addAccountDetails()  {
 	  objFinance=new FinancePage(driver);
 	  String accountName=ExcelUtilities.getCellStringData(0, 0, sheet3);
 	  int accountBalance=ExcelUtilities.getCellNumericData(1, 0, sheet3);

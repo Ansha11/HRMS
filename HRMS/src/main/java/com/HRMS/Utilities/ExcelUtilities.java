@@ -16,10 +16,18 @@ public class ExcelUtilities {
 	public static FileInputStream f;
 	public static XSSFWorkbook w;
 	public static XSSFSheet sh;
-	public static String getCellStringData(int RowNum, int ColNum,String Sheet) throws IOException {
+	public static String getCellStringData(int RowNum, int ColNum,String Sheet)  {
 		
-		f=new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
-		w=new XSSFWorkbook(f);
+		try {
+			f=new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			w=new XSSFWorkbook(f);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		sh=w.getSheet(Sheet);
 Row r=sh.getRow(RowNum)	;
 Cell c=r.getCell(ColNum);
@@ -27,11 +35,19 @@ return c.getStringCellValue();
 
 	}
 
-	public static int getCellNumericData(int RowNum, int ColNum,String Sheet) throws IOException
+	public static int getCellNumericData(int RowNum, int ColNum,String Sheet) 
 	{
-		f=new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
+		try {
+			f=new FileInputStream(Constants.CONFIGPATH_EXCELREADER);
+		} catch (FileNotFoundException e) {
+						e.printStackTrace();
+		}
 
-		w= new XSSFWorkbook(f);
+		try {
+			w= new XSSFWorkbook(f);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		sh=w.getSheet(Sheet);
 		return (int) sh.getRow(RowNum).getCell(ColNum).getNumericCellValue();
 		

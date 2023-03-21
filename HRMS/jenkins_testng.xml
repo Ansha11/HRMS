@@ -4,10 +4,15 @@
 	<listeners>
 		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test1">
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.HRMS.Scripts.LoginTest"/>
+      <class name="com.HRMS.Scripts.LoginTest">
+		  <methods>
+			  <include name="verifyLoginValidUserInvalidPassword"></include>
+			  <include name="verifyLoginInvalidUserValidPassword"></include>
+		  </methods>
+      </class>
     </classes>
   </test> 
 </suite> 
