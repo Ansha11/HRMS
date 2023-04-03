@@ -9,6 +9,8 @@
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.HRMS.Scripts.LoginTest"/>
+      <class name="com.HRMS.Scripts.FinanceTest"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

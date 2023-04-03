@@ -9,8 +9,8 @@
     <classes>
       <class name="com.HRMS.Scripts.LoginTest">
 		  <methods>
-			  <include name="verifyLoginInvalidUserValidPassword"></include>
-			  <include name="verifyLoginInvalidUserInvalidPassword"></include>
+
+			  <include name="verifyLoginValidUserValidPassword"></include>
 
 		  </methods>
       </class>

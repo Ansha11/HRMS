@@ -4,17 +4,36 @@
 	<listeners>
 		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
 		</listeners>
-  <test thread-count="5" name="TestingUsingEdgeBrowser">
+		<test thread-count="5" name="TestingUsingChromeBrowser">
+	  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.HRMS.Scripts.LoginTest"> 
+		  <methods>
+			  <include name="verifyLoginValidUserValidPassword"></include>
+		  </methods>
+		  </class>
+		   <class name="com.HRMS.Scripts.FinanceTest"> 
+		  <methods>
+			  <include name="verifyAddedAccountDetails"></include>
+		  </methods>
+		  </class>
+    </classes>
+  </test> 
+ <test thread-count="5" name="TestingUsingEdgeBrowser">
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.HRMS.Base.TestBase"/>
+      <class name="com.HRMS.Scripts.LoginTest"> 
+		  <methods>
+			  <include name="verifyLoginValidUserValidPassword"></include>
+		  </methods> 
+		  </class>
+		  <class name="com.HRMS.Scripts.FinanceTest"> 
+		  <methods>
+			  <include name="verifyAddedAccountDetails"></include>
+		  </methods> 
+		  </class>
     </classes>
   </test> 
-  <test thread-count="5" name="TestingUsingSafariBrowser">
-	  <parameter name="browser" value="safari"></parameter>
-    <classes>
-      <class name="com.HRMS.Base.TestBase"/>
-    </classes>
-  </test> 
+  
   <!-- Test -->
 </suite> <!-- Suite -->

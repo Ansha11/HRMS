@@ -12,6 +12,7 @@ import com.HRMS.Listeners.TestListener;
 import com.HRMS.Pages.StaffPage;
 import com.HRMS.Pages.TrainingPage;
 import com.HRMS.Utilities.ExcelUtilities;
+import com.HRMS.Utilities.RandomUtilities;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -19,34 +20,46 @@ public class TrainingTest extends TestBase{
 	TrainingPage objTraining;
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
-  @Test(priority=1,description="check whether the Training button is enabled")
-  public void checkTrainingButtonstatus() {
-	  objTraining=new TrainingPage(driver);
-	  objTraining.clickTrainingButton();
-boolean typeStatus_Actual=objTraining.checkTraningButtonStatus();
-Assert.assertTrue(typeStatus_Actual);
-extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_STATUS);
+	@Test(priority=17,description="check whether the Training button is enabled",groups= {"smoke"})
+	public void verifyTrainingButtonstatus() {
+		objTraining=new TrainingPage(driver);
+		objTraining.clickTrainingButton();
+		boolean typeStatus_Actual=objTraining.checkTraningButtonStatus();
+		Assert.assertTrue(typeStatus_Actual);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_STATUS);
+		extentTest.get().assignCategory("smoke");
+	}
 
-  }
-  @Test(priority=2,description="verifying the selected training type is dispalyed in the list")
-  public void setTrainingType() {
-	  objTraining=new TrainingPage(driver);
-	  String type=Constants.TRAININGTYPE_EXPECTED;
-objTraining.setTrainingType(type);
-objTraining.clickSave();
-String type_Actual=objTraining.checkTrainingType();
-Assert.assertEquals(type_Actual,Constants.TRAININGTYPE_EXPECTED);
-objTraining.clickTrainingButton();
-extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_TYPE);
+	@Test(priority=18,description="verifying the selected training type is displayed in the list")
+	public void verifyTrainingTypeSelected() {
+		objTraining=new TrainingPage(driver);
+		objTraining.setTrainingType(Constants.TRAININGTYPE_EXPECTED);
+		objTraining.clickSave();
+		objTraining.searchTrainingType(Constants.TRAININGTYPE_EXPECTED);
+		String type_Actual=objTraining.checkTrainingType();
+		Assert.assertEquals(type_Actual,Constants.TRAININGTYPE_EXPECTED);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_TYPE);
+	}
+	
+	@Test(priority=19,description="verifying the training type is updated")
+	public void verifyTrainingTypeUpdated() {
+		objTraining=new TrainingPage(driver);
+		objTraining.editTrainingType(Constants.TRAINING_TYPE_UPDATED);
+		Assert.assertTrue(objTraining.checkUpdatedTrainingType());
+		extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_TYPE_UPDATE);
+	}
+	@Test(priority=20,description="verify the given contact number is added")
+	public void verifyContactNumberVisibility()  {
+		objTraining=new TrainingPage(driver);
+		objTraining.clicktrainersList();
+		String fname=RandomUtilities.getfName();
+		String lname=RandomUtilities.getlName();
+		String email=RandomUtilities.getRandomEmail();
+		objTraining.addNewTrainer(fname, lname,email);
+		objTraining.setContactNumber(Constants.CONTACT_NUMBER);
+		objTraining.selectCompany();
+		objTraining.clickTrainingButton();
+		Assert.assertTrue(objTraining.contactNumberDisplayed());
+		extentTest.get().log(Status.PASS, ExtentLogMessage.CONTACT_NUMBER_MESSAGE);
 
-  }
-  @Test(priority=3,description="verifyning List All Trainers is displayed")
-  public void listAllTrainersDisplayed()  {
-	  objTraining=new TrainingPage(driver);
-	  objTraining.clickTrainingButton();
-objTraining.clicktrainersList();
-String listAllText_Actual=objTraining.checkListAllTrainers();
-Assert.assertEquals(listAllText_Actual,Constants.ListAllText_Expected);
-extentTest.get().log(Status.PASS, ExtentLogMessage.LISTALL_TRAINERS_MESSAGE);
-
-}}
+	}}

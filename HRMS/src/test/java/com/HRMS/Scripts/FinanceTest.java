@@ -17,29 +17,55 @@ import com.aventstack.extentreports.Status;
 public class FinanceTest extends TestBase {
 	FinancePage objFinance;
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
-	String sheet3=Constants.Sheet3;
 
-  @Test(priority=1,description="verify Add New Account is displayed")
-  public void checkAddNewAccountText() {
+  
+  @Test(priority=24,description="verify newly added account is listed",groups= {"smoke"})
+  public void verifyAddedAccountDetails()  {
 	  objFinance=new FinancePage(driver);
-	  Assert.assertTrue(objFinance.addNewAccount());
-		extentTest.get().log(Status.PASS, ExtentLogMessage.ADDNEWACCOUNT_MESSAGE);
+	  objFinance.Scroll();
+	  objFinance.clickFinanceButton();
+	  objFinance.addAccountDetails();
+	  objFinance.clickSave();
+	  objFinance.searchEnteredAccount();
+	  Assert.assertEquals(objFinance.checkEnteredAccountName(), Constants.ACCOUNT_NAME);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.ACCOUNT_DETAILS);
+		extentTest.get().assignCategory("smoke");
+
+}
+  @Test(priority=25,description="verify the  account balance is listed",groups= {"smoke"})
+  public void verifyFixedAccountBalance()  {
+	  objFinance=new FinancePage(driver);
+	  objFinance.searchAccount(Constants.ACCOUNT_SEARCH);
+	  Assert.assertTrue(objFinance.searchBalanceListed());
+		extentTest.get().log(Status.PASS, ExtentLogMessage.BALANCEAMOUNT_DETAILS);
+		extentTest.get().assignCategory("smoke");
 
   }
-  @Test(priority=2,description="verify newly added account details are listed")
-  public void addAccountDetails()  {
+  
+  @Test(priority=26,description="verify newly added payee is listed")
+  public void verifyAddedPayeeDetails()  {
 	  objFinance=new FinancePage(driver);
-	  String accountName=ExcelUtilities.getCellStringData(0, 0, sheet3);
-	  int accountBalance=ExcelUtilities.getCellNumericData(1, 0, sheet3);
-	  int accountNumber=ExcelUtilities.getCellNumericData(2,0,sheet3);
-	  objFinance.addAccountName(accountName);
-	  objFinance.addAccountBalance(accountBalance);
-	  objFinance.addAccountNumber(accountNumber);
+	  objFinance.Scroll();
+	  objFinance.addPayeeDetails(Constants.PAYEE_NAME);
 	  objFinance.clickSave();
-	  String accountNameEntered_Actual=objFinance.checkEnteredAccountName();
-	  Assert.assertEquals(accountNameEntered_Actual, Constants.ACCOUNTNAME_EXPECTED);
-		extentTest.get().log(Status.PASS, ExtentLogMessage.ACCOUNT_DETAILS);
+	  Assert.assertEquals(objFinance.checkPayeeName(),Constants.PAYEE_NAME);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.PAYEE_DETAILS);
 
-	  
-}
+  }
+  @Test(priority=27,description="verify the added payer details are deleted")
+  public void verifyPayerDetails()  {
+	  objFinance=new FinancePage(driver);
+	  objFinance.Scroll();
+	  objFinance.addpayerDetails();
+	  Assert.assertEquals(objFinance.deleteAddedPayerDetails(),Constants.DELETE_MESSAGE);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.PAYER_DETAILS);
+
+  }
+ /* @Test(priority=5,description="verify the status of Home button")
+  public void verifyHomestatus()  {
+	  objFinance=new FinancePage(driver);
+	 Assert.assertTrue(objFinance.homeButtonStatus());
+		extentTest.get().log(Status.PASS, ExtentLogMessage.HOME_STATUS_MESSAGE);
+
+}*/
 }

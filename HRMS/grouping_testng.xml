@@ -14,7 +14,9 @@
     <classes>
 	<class name="com.HRMS.Base.TestBase"/>
       <class name="com.HRMS.Scripts.LoginTest"/>
-      <class name="com.HRMS.Scripts.StaffTest"/>
+      <class name="com.HRMS.Scripts.TrainingTest"/>
+      <class name="com.HRMS.Scripts.FinanceTest"/>
+      <class name="com.HRMS.Scripts.HRReportsPageTest"/>
 
     </classes>
   </test> 

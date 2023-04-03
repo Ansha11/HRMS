@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,6 +14,7 @@ import com.HRMS.Constants.Constants;
 import com.HRMS.Constants.ExtentLogMessage;
 import com.HRMS.Listeners.TestListener;
 import com.HRMS.Pages.StaffPage;
+import com.HRMS.Utilities.PageUtilities;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -19,57 +22,60 @@ public class StaffTest extends TestBase {
 	StaffPage objStaff;
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
-	@Test(priority=1,description="Verifying entries selected",groups= {"smoke"})
-	public void validateEntriesCount() {
+	
+	@Test(priority=5,description="Verify the coreHR checkbox is not selected and added role is listed")
+	public void verifyAddedRoleisListed() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickStaffButton();
-		objStaff.clickEmployeeButton();
-		String entries_Actual= objStaff.selectEntries();
-		Assert.assertEquals(entries_Actual,Constants.ENTRIES_COUNT_EXPECTED);
-		extentTest.get().log(Status.PASS, ExtentLogMessage.ENTRIES_MESSAGE);
-		extentTest.get().assignCategory("smoke");
+		objStaff.clickRolesAndPrivileges();
+		objStaff.addNewRole(Constants.ROLE_NAME);
+		boolean coreHRStatus=objStaff.coreHRCheckboxStatus();
+		AssertJUnit.assertFalse(coreHRStatus);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.ROLE_ADDED_MESSAGE);
+	}
+	@Test(priority=6,description="Verify the newly added role is deleted")
+	public void verifyAddedRoleisDeleted() {
+		objStaff=new StaffPage(driver);
+		AssertJUnit.assertEquals(objStaff.deleteAddedRole(),Constants.SEARCH_DETAILS);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.ROLE_DELETED_MESSAGE);
 
 	}
-	@Test(priority=2,description="Verify the company is selected",groups= {"smoke"})
+	@Test(priority=7,description="Verify the given  company is selected")
 	public void verifyCompanySelection() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickStaffDirectoryButton();
-		objStaff.selectCompany();
 		String company_Actual= objStaff.selectCompany();
-		Assert.assertEquals(company_Actual, Constants.COMPANY_NAME_EXPECTED);
-		extentTest.get().log(Status.PASS, ExtentLogMessage.COMPANY_SELECTED);
-		extentTest.get().assignCategory("smoke");
+		AssertJUnit.assertEquals(company_Actual, Constants.COMPANY_NAME);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.COMPANY_SELECTED_MESSAGE);
 
 	}
-	@Test(priority=3,description="Verify company details are displayed",groups= {"regression"})
-	public void validateSelectedCompanyRecords() {
+	@Test(priority=8,description="Verify selected company staff details")
+	public void verifyCompanyStaffRecords() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickGetButton();
-		String dispMsgActual= objStaff.checkMessageDisplayed();
-		Assert.assertEquals(dispMsgActual, Constants.COMPANYDETAILS_MSG);
-		extentTest.get().log(Status.PASS, ExtentLogMessage.COMPANY_MESSAGE);
-		extentTest.get().assignCategory("regression");
+		String dispMsgActual= objStaff.checkStaffDisplayed();
+		AssertJUnit.assertEquals(dispMsgActual, Constants.ADDEDPERSON);
+		extentTest.get().log(Status.PASS, ExtentLogMessage.STAFF_DISPLAYED_MESSAGE);
 
 	}
-	@Test(priority=4,description="Verify filter button is enabled")
+	@Test(priority=9,description="Verify filter button is enabled")
 
-	public void filterButtonStatus() {
+	public void verifyfilterButtonStatus() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickEmployeelastLogin();
-		Assert.assertTrue(objStaff.filterButtonisEnabled());
+		AssertJUnit.assertTrue(objStaff.checkFilterButtonStatus());
 		extentTest.get().log(Status.PASS, ExtentLogMessage.FILTERBUTTON_STATUS);
 
 	}
-	@Test(priority=5,description="Verify Active Option is displayed")
+	@Test(priority=10,description="Verify Active Option is displayed")
 
-	public void checkActiveOption() {
+	public void checkActiveOptionStatus() {
 		objStaff=new StaffPage(driver);
-		objStaff.clickEmployeelastLogin();
 		objStaff.clickFilterButton();
 		objStaff.selectCompanytoFilter();
 		objStaff.clickGetButton();
 		objStaff.clickStaffButton();
-		Assert.assertTrue(objStaff.activeIsDisplayed());
+		AssertJUnit.assertTrue(objStaff.activeOptionStatus());
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ACTIVE_OPTION);
 
 

@@ -7,19 +7,26 @@
   <test  name="ParallelTesting-Test1">
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.HRMS.Scripts.LoginTest"/>		  
+      <class name="com.HRMS.Scripts.StaffTest"/>	
+		 
     </classes>
   </test> 
   <test  name="ParallelTesting-Test2">
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.HRMS.Scripts.StaffTest"/>		  
+      <class name="com.HRMS.Scripts.OrganizationTest"/>
     </classes>
   </test> 
   <test  name="ParallelTesting-Test3">
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="com.HRMS.Scripts.TrainingTest"/>
+      <class name="com.HRMS.Scripts.ProjectManagerTest"/>
+    </classes>
+  </test> 
+   <test  name="ParallelTesting-Test4">
+	  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="com.HRMS.Scripts.FinanceTest"/>
     </classes>
   </test> 
 </suite> 

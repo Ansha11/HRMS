@@ -7,51 +7,72 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.HRMS.Constants.Constants;
+import com.HRMS.Utilities.PageUtilities;
+
 public class ProjectManagerPage {
-public WebDriver driver;
-public Select selectobj;
+	public WebDriver driver;
+
 	@FindBy(xpath="//span[text()='Project Manager']")
-	WebElement projectManager;
+	private WebElement projectManager;
 	@FindBy(xpath="//a[text()=' Projects ']")
-	WebElement project;
+	private WebElement project;
+	@FindBy(xpath="//span[text()='2']")
+	private WebElement projectCount;
+	@FindBy(xpath="//a[text()=' Home']")
+	private WebElement home;
+	@FindBy(xpath="//a[text()='2']")
+	private WebElement homePgprojCount;
 	@FindBy(xpath="//label[text()='Search:']")
-	WebElement search;
-	@FindBy(xpath="//td[text()='No matching records found']")
-	WebElement searchInfo;
+	private WebElement search;
 	@FindBy(xpath="//a[text()=' Clients ']")
-	WebElement client;
+	private WebElement client;
 	@FindBy(xpath="//button[text()=' Add New']")
-	WebElement addNew;
+	private WebElement addNew;
 	@FindBy(name="name")
-	WebElement name;
+	private WebElement name;
 	@FindBy(name="email")
-	WebElement email;
-    @FindBy(xpath="//select[@name='country']")
-    WebElement country;
-    @FindBy(xpath="//button[text()=' Save ']")
-    WebElement save;
+	private WebElement email;
+	@FindBy(xpath="//select[@name='country']")
+	private WebElement country;
+	@FindBy(xpath="//button[text()=' Save ']")
+	private WebElement save;
+	@FindBy(xpath="//button[text()=' Save']")
+	private WebElement saveButton;
+	@FindBy(xpath="//a[text()=' Tax Type ']")
+	private WebElement tax;
+	@FindBy(name="tax_name")
+	private WebElement taxName;
+	@FindBy(name="tax_rate")
+	private WebElement taxRate;;
+	@FindBy(xpath="//select[@name='tax_type']")
+	private WebElement taxType;
+	@FindBy(xpath="//td[text()='Fixed']")
+	private WebElement taxTypeListed;
+
+
 	public ProjectManagerPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	public void  scrollWindow() {
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView()",projectManager);
+		PageUtilities.scrollWindow(driver, projectManager);
 	}
-	
 	public void clickProjectManager() {
-		
 		projectManager.click();
+	}
+	public void clickProject() {
 		project.click();
 	}
-	public void enterSearchData(String data) {
-		search.sendKeys(data);
-		
+	public String checkProjectCount() {
+		return(projectCount.getText());
+
 	}
-	public String getSearchInfo() {
-		String search_info=searchInfo.getText();
-		return search_info;
+	public String checkHomePageProjectCount() {
+		home.click();
+		return(homePgprojCount.getText());
 	}
+
 	public void addNewClientData() {
 		client.click();
 		addNew.click();
@@ -63,19 +84,28 @@ public Select selectobj;
 		email.sendKeys(email1);
 	}
 	public String selectCountry() {
-		selectobj=new Select(country);
-		selectobj.selectByIndex(1);
-		String country=selectobj.getFirstSelectedOption().getText();
-		System.out.println(country);
-		return country;
+		Select obj=PageUtilities.selectClassDropdown(driver,country);
+		obj.selectByIndex(1);
+		String countryselected=obj.getFirstSelectedOption().getText();
+		return countryselected;
 	}
-	public boolean checkSaveButtonStatus() {
-		boolean status=save.isEnabled();
-		return status;
-	}
+
 	public void clickSave() {
 		save.click();
 	}
+	public void addNewTax() {
+		tax.click();
+		taxName.sendKeys(Constants.TAX_NAME);
+		taxRate.sendKeys(String.valueOf(Constants.TAX_RATE));
+		Select obj=PageUtilities.selectClassDropdown(driver,taxType);
+		obj.selectByIndex(1);
+		saveButton.click();
+	}
+	public String searchTaxType() {
+		search.sendKeys(Constants.TAX_NAME);
+		return(taxTypeListed.getText());
+	}
+
 }
 
 

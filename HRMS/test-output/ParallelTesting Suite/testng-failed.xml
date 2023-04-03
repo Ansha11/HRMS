@@ -4,18 +4,41 @@
   <listeners>
     <listener class-name="com.HRMS.Listeners.TestListener"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="ParallelClass-Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
+      <class name="com.HRMS.Scripts.TrainingTest">
+        <methods>
+          <include name="verifyTrainingButtonstatus"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.TrainingTest -->
       <class name="com.HRMS.Scripts.LoginTest">
         <methods>
-          <include name="verifyLoginValidUserValidPassword"/>
-          <include name="verifyLoginValidUserInvalidPassword"/>
+          <include name="verifyLoginValidUserValidPassword" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.HRMS.Scripts.LoginTest -->
+      <class name="com.HRMS.Scripts.FinanceTest">
+        <methods>
+          <include name="verifyAddedAccountDetails"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.FinanceTest -->
+      <class name="com.HRMS.Scripts.ProjectManagerTest">
+        <methods>
+          <include name="verifyProjectCount"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.ProjectManagerTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ParallelClass-Test(failed) -->
 </suite> <!-- Failed suite [ParallelTesting Suite] -->

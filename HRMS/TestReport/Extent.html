@@ -28,7 +28,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -40,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a>
-				<span class='suite-start-time'>22 Mar 2023, 01:30:15</span>
+				<span class='suite-start-time'>3 Apr 2023, 23:24:42</span>
 			</a>
 			<a>
 				<span>v3.0.0</span>
@@ -78,6 +79,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>smoke</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -126,17 +128,22 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyLoginValidUserInvalidPassword</span>
-						<span class='test-time'>22 Mar 2023, 01:30:32</span>
+						<span class='test-name'>verifyLoginValidUserValidPassword</span>
+						<span class='test-time'>3 Apr 2023, 23:24:53</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>22 Mar 2023, 01:30:32</span>
-	<span class='label end-time'>22 Mar 2023, 01:30:38</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+99ms</span>
+	<span class='label start-time'>3 Apr 2023, 23:24:53</span>
+	<span class='label end-time'>3 Apr 2023, 23:25:14</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+130ms</span>
 </div>
-	<div class='test-desc'>Verifying LoginPage with valid username and invalid password </div>
+	<div class='test-desc'>Verifying LoginPage with valid username and password </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -149,12 +156,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>01:30:35</td>
-					<td class='step-details'>Login failed with invalid credential</td>
+					<td class='timestamp'>23:25:01</td>
+					<td class='step-details'>Login success with correct credential</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>01:30:35</td>
+					<td class='timestamp'>23:25:01</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -166,17 +173,22 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyLoginInvalidUserInvalidPassword</span>
-						<span class='test-time'>22 Mar 2023, 01:30:36</span>
+						<span class='test-name'>verifyAddedAccountDetails</span>
+						<span class='test-time'>3 Apr 2023, 23:25:02</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>22 Mar 2023, 01:30:36</span>
-	<span class='label end-time'>22 Mar 2023, 01:30:38</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+450ms</span>
+	<span class='label start-time'>3 Apr 2023, 23:25:02</span>
+	<span class='label end-time'>3 Apr 2023, 23:25:14</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+881ms</span>
 </div>
-	<div class='test-desc'>Verifying LoginPage with invalid username and invalid password </div>
+	<div class='test-desc'>verify newly added account is listed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+	</div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
 			<thead>
@@ -189,12 +201,137 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>01:30:37</td>
-					<td class='step-details'>Login failed with invalid credential</td>
+					<td class='timestamp'>23:25:05</td>
+					<td class='step-details'>Savings Account is added</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>01:30:37</td>
+					<td class='timestamp'>23:25:05</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyFixedAccountBalance</span>
+						<span class='test-time'>3 Apr 2023, 23:25:05</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>3 Apr 2023, 23:25:05</span>
+	<span class='label end-time'>3 Apr 2023, 23:25:14</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+364ms</span>
+</div>
+	<div class='test-desc'>verify the  account balance is listed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>23:25:06</td>
+					<td class='step-details'>Balance amount is displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>23:25:06</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyAddedPayeeDetails</span>
+						<span class='test-time'>3 Apr 2023, 23:25:06</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>3 Apr 2023, 23:25:06</span>
+	<span class='label end-time'>3 Apr 2023, 23:25:14</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+682ms</span>
+</div>
+	<div class='test-desc'>verify newly added payee is listed </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>23:25:09</td>
+					<td class='step-details'>Payee details is added</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>23:25:09</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyPayerDetails</span>
+						<span class='test-time'>3 Apr 2023, 23:25:09</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>3 Apr 2023, 23:25:09</span>
+	<span class='label end-time'>3 Apr 2023, 23:25:14</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+697ms</span>
+</div>
+	<div class='test-desc'>verify the added payer details are deleted </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>23:25:13</td>
+					<td class='step-details'>Added payer is deleted</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>23:25:13</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -235,7 +372,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>2</span> test(s) passed</span>
+					<span><span class='strong'>5</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
@@ -250,7 +387,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>4</span> step(s) passed</span>
+					<span><span class='strong'>10</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
@@ -261,7 +398,87 @@
 	</div>
 </div>
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h5>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>smoke</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>3 Apr 2023, 23:24:53</td>
+										<td class='linked' test-id='1'>verifyLoginValidUserValidPassword</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>3 Apr 2023, 23:25:02</td>
+										<td class='linked' test-id='2'>verifyAddedAccountDetails</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>3 Apr 2023, 23:25:05</td>
+										<td class='linked' test-id='3'>verifyFixedAccountBalance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -269,31 +486,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>22 Mar 2023, 01:30:15</div>
+					<div class='panel-lead'>3 Apr 2023, 23:24:42</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>22 Mar 2023, 01:30:38</div>
+			 		<div class='panel-lead'>3 Apr 2023, 23:25:14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>22,459ms</div>
+					<div class='panel-lead'>31,376ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -315,11 +532,31 @@
 						</tr>
 						<tr>
 							<td>Java Version</td>
-							<td>17.0.6</td>
+							<td>17.0.5</td>
 						</tr>
 						<tr>
 							<td>Host Name</td>
 							<td>192-168-1-108.tpgi.com.au</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>smoke</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
 						</tr>
 					</table>
 				</div>
@@ -333,7 +570,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 5,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -341,7 +578,7 @@
 				skipParent: 0,
 				unknownParent: 0,
 				
-				passChild: 4,
+				passChild: 10,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,

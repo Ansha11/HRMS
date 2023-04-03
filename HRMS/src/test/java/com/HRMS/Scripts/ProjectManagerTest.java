@@ -19,30 +19,24 @@ public class ProjectManagerTest extends TestBase{
 	ProjectManagerPage objProject;
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
-	@Test(priority=1,description="verify the given project is listed")
-	  public void verifyProjectSearch()  {
+	@Test(priority=21,description="verify the project count",groups= {"regression"})
+	  public void verifyProjectCount() {
 		  objProject =new ProjectManagerPage(driver);
 		  objProject.scrollWindow();
 		  objProject.clickProjectManager();
-		  String project_search=Constants.PROJECT_SEARCH;
-		  objProject.enterSearchData(project_search);
-		  String searchInfo_Actual=objProject.getSearchInfo();
-		  Assert.assertEquals(searchInfo_Actual,Constants.PROJECT_SEARCH_DETAILS1);
-			extentTest.get().log(Status.PASS, ExtentLogMessage.PROJECTSEARCH_MESSAGE);
+		  objProject.clickProject();
+		Assert.assertEquals(objProject.checkProjectCount(),objProject.checkHomePageProjectCount());
+		extentTest.get().log(Status.PASS, ExtentLogMessage.PROJECT_COUNT_MESSAGE);
+		extentTest.get().assignCategory("regression");
 
 	}
-  @Test(priority=2,description="verifying save button status")
-  public void verifySaveButtonStatus()  {
-	  objProject =new ProjectManagerPage(driver);
-	  objProject.scrollWindow();
-	 objProject.addNewClientData();
-	  Assert.assertTrue(objProject.checkSaveButtonStatus());
-		extentTest.get().log(Status.PASS, ExtentLogMessage.SAVEBUTTON_STATUS);
-
-  }
-  
-  @Test(priority=3,description="verify the given country is selected")
+	
+  @Test(priority=22,description="verify the given country is selected",groups= {"regression"})
   public void verifyCountrySelection()  {
+	  objProject =new ProjectManagerPage(driver);
+	 objProject.scrollWindow();
+	  objProject.clickProjectManager();
+	 objProject.addNewClientData();
 	  String name=RandomUtilities.getfName();
 	  String email=RandomUtilities.getRandomEmail();
 	  objProject.setName(name);
@@ -52,6 +46,17 @@ public class ProjectManagerTest extends TestBase{
 String country_Actual=objProject.selectCountry();
 Assert.assertEquals(country_Actual,Constants.COUNTRY_EXPECTED);
 extentTest.get().log(Status.PASS, ExtentLogMessage.COUNTRYSELECTION_MESSAGE);
+extentTest.get().assignCategory("regression");
 
 }
+  @Test(priority=23,description="verify the added tax type ")
+  public void verifyTaxTypeEntered()  {
+	  objProject =new ProjectManagerPage(driver);
+	  objProject.scrollWindow();
+	  objProject.addNewTax();
+	 Assert.assertEquals(objProject.searchTaxType(),Constants.TAX_TYPE);
+	extentTest.get().log(Status.PASS, ExtentLogMessage.TAX_TYPE_MESSAGE);
+
+  }
+ 
 }
