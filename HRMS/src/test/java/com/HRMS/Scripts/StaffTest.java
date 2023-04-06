@@ -18,7 +18,7 @@ import com.HRMS.Utilities.PageUtilities;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class StaffTest extends TestBase {
+public class StaffTest extends TestBase{
 	StaffPage objStaff;
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
@@ -64,7 +64,7 @@ public class StaffTest extends TestBase {
 		objStaff=new StaffPage(driver);
 		objStaff.clickEmployeelastLogin();
 		AssertJUnit.assertTrue(objStaff.checkFilterButtonStatus());
-		extentTest.get().log(Status.PASS, ExtentLogMessage.FILTERBUTTON_STATUS);
+	//extentTest.get().log(Status.PASS, ExtentLogMessage.FILTERBUTTON_STATUS);
 
 	}
 	@Test(priority=10,description="Verify Active Option is displayed")
