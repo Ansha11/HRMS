@@ -1,28 +1,56 @@
 package com.HRMS.Base;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 	
-public static	ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-//used to initialize thread local driver
-	public static WebDriver testInitialization(String browser){
-        if(browser.equals("chrome")){
-            tlDriver.set(new ChromeDriver());
-        }else if(browser.equals("FireFox")){
-            tlDriver.set(new FirefoxDriver());
-        }else if(browser.equals("edge")){
-            tlDriver.set(new EdgeDriver());
-        }else{
+	private DriverFactory() {}
+	
+	private static DriverFactory instance=new DriverFactory();
+	public static DriverFactory getInstance() {
+		return instance;
+	}
+	public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	
+	public void setDriver(String browser){ //used to initialize the thread-local for the given browser
+       
+		if(browser.equalsIgnoreCase("chrome")){	
+			
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions co=new ChromeOptions();
+			co.addArguments("--remote-allow-origins=*");
+			driver.set(new ChromeDriver(co));
+		}
+        
+		else if(browser.equalsIgnoreCase("safari")){
+
+			driver.set(new SafariDriver());
+		}
+		else if(browser.equalsIgnoreCase("edge")){
+			WebDriverManager.edgedriver().setup();
+			driver.set(new EdgeDriver());
+        }
+		else{
             throw new RuntimeException("Invalid browser");
         }
-        getDriver().manage().deleteAllCookies();
-        getDriver().manage().window().maximize();
-        return getDriver();
-}
-	public static synchronized WebDriver getDriver() {       //used to get driver with threadlocal
-        return tlDriver.get();
+      //  getDriver().manage().deleteAllCookies();
+      //  getDriver().manage().window().maximize();
+      //  return getDriver();
+	}
+	
+	public  WebDriver getDriver() { //used to get driver with thread-local
+        return driver.get();
     }
+	
+	public  void closeBrowser() {
+		getDriver().close();
+		driver.remove();
+	}
 }

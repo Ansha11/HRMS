@@ -1,11 +1,8 @@
 package com.HRMS.Scripts;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,13 +27,13 @@ public class StaffTest extends TestBase{
 		objStaff.clickRolesAndPrivileges();
 		objStaff.addNewRole(Constants.ROLE_NAME);
 		boolean coreHRStatus=objStaff.coreHRCheckboxStatus();
-		AssertJUnit.assertFalse(coreHRStatus);
+		Assert.assertFalse(coreHRStatus);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ROLE_ADDED_MESSAGE);
 	}
 	@Test(priority=6,description="Verify the newly added role is deleted")
 	public void verifyAddedRoleisDeleted() {
 		objStaff=new StaffPage(driver);
-		AssertJUnit.assertEquals(objStaff.deleteAddedRole(),Constants.SEARCH_DETAILS);
+		Assert.assertEquals(objStaff.deleteAddedRole(),Constants.SEARCH_DETAILS);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ROLE_DELETED_MESSAGE);
 
 	}
@@ -45,7 +42,7 @@ public class StaffTest extends TestBase{
 		objStaff=new StaffPage(driver);
 		objStaff.clickStaffDirectoryButton();
 		String company_Actual= objStaff.selectCompany();
-		AssertJUnit.assertEquals(company_Actual, Constants.COMPANY_NAME);
+		Assert.assertEquals(company_Actual, Constants.COMPANY_NAME);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.COMPANY_SELECTED_MESSAGE);
 
 	}
@@ -54,7 +51,7 @@ public class StaffTest extends TestBase{
 		objStaff=new StaffPage(driver);
 		objStaff.clickGetButton();
 		String dispMsgActual= objStaff.checkStaffDisplayed();
-		AssertJUnit.assertEquals(dispMsgActual, Constants.ADDEDPERSON);
+		Assert.assertEquals(dispMsgActual, Constants.ADDEDPERSON);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.STAFF_DISPLAYED_MESSAGE);
 
 	}
@@ -63,9 +60,8 @@ public class StaffTest extends TestBase{
 	public void verifyfilterButtonStatus() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickEmployeelastLogin();
-		AssertJUnit.assertTrue(objStaff.checkFilterButtonStatus());
-	//extentTest.get().log(Status.PASS, ExtentLogMessage.FILTERBUTTON_STATUS);
-
+		Assert.assertTrue(objStaff.checkFilterButtonStatus());
+	extentTest.get().log(Status.PASS, ExtentLogMessage.FILTERBUTTON_STATUS);
 	}
 	@Test(priority=10,description="Verify Active Option is displayed")
 
@@ -75,9 +71,8 @@ public class StaffTest extends TestBase{
 		objStaff.selectCompanytoFilter();
 		objStaff.clickGetButton();
 		objStaff.clickStaffButton();
-		AssertJUnit.assertTrue(objStaff.activeOptionStatus());
+		Assert.assertTrue(objStaff.activeOptionStatus());
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ACTIVE_OPTION);
-
 
 	}
 }

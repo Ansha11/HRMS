@@ -7,13 +7,26 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
+      <class name="com.HRMS.Scripts.StaffTest">
+        <methods>
+          <include name="checkActiveOptionStatus"/>
+          <include name="verifyfilterButtonStatus"/>
+          <include name="verifyAddedRoleisListed"/>
+          <include name="verifyCompanyStaffRecords"/>
+          <include name="setUp"/>
+          <include name="verifyCompanySelection"/>
+          <include name="tearDown"/>
+          <include name="verifyAddedRoleisDeleted"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.StaffTest -->
       <class name="com.HRMS.Scripts.FinanceTest">
         <methods>
           <include name="verifyFixedAccountBalance"/>
-          <include name="verifyLoginValidUserValidPassword" invocation-numbers="0"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
+          <include name="verifyAddedAccountDetails"/>
+          <include name="verifyAddedPayeeDetails"/>
+          <include name="setUp"/>
+          <include name="verifyPayerDetails"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.HRMS.Scripts.FinanceTest -->
     </classes>

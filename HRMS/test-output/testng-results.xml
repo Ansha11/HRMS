@@ -1,80 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="10" passed="5" failed="0" skipped="0">
+<testng-results ignored="15" total="42" passed="27" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-03T23:24:43 AEST" name="Suite" finished-at="2023-04-03T23:25:14 AEST" duration-ms="30722">
+  <suite started-at="2023-04-05T11:08:38 AEST" name="Suite" finished-at="2023-04-05T11:10:04 AEST" duration-ms="86365">
     <groups>
+      <group name="regression">
+        <method signature="OrganizationTest.verifyAddedPersonDetails(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:11, instance:com.HRMS.Scripts.OrganizationTest@1df8b5b8]" name="verifyAddedPersonDetails" class="com.HRMS.Scripts.OrganizationTest"/>
+        <method signature="ProjectManagerTest.verifyCountrySelection()[pri:22, instance:com.HRMS.Scripts.ProjectManagerTest@7b993c65]" name="verifyCountrySelection" class="com.HRMS.Scripts.ProjectManagerTest"/>
+        <method signature="ProjectManagerTest.verifyProjectCount()[pri:21, instance:com.HRMS.Scripts.ProjectManagerTest@7b993c65]" name="verifyProjectCount" class="com.HRMS.Scripts.ProjectManagerTest"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="FinanceTest.verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" name="verifyAddedAccountDetails" class="com.HRMS.Scripts.FinanceTest"/>
-        <method signature="FinanceTest.verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" name="verifyFixedAccountBalance" class="com.HRMS.Scripts.FinanceTest"/>
-        <method signature="LoginTest.verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@14f232c4]" name="verifyLoginValidUserValidPassword" class="com.HRMS.Scripts.LoginTest"/>
+        <method signature="FinanceTest.verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@37911f88]" name="verifyAddedAccountDetails" class="com.HRMS.Scripts.FinanceTest"/>
+        <method signature="FinanceTest.verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@37911f88]" name="verifyFixedAccountBalance" class="com.HRMS.Scripts.FinanceTest"/>
+        <method signature="HRReportsPageTest.verifyEmployeeIDisListed()[pri:30, instance:com.HRMS.Scripts.HRReportsPageTest@6f1c29b7]" name="verifyEmployeeIDisListed" class="com.HRMS.Scripts.HRReportsPageTest"/>
+        <method signature="HRReportsPageTest.verifyProjectReportStatusisListed()[pri:28, instance:com.HRMS.Scripts.HRReportsPageTest@6f1c29b7]" name="verifyProjectReportStatusisListed" class="com.HRMS.Scripts.HRReportsPageTest"/>
+        <method signature="LoginTest.verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@2205a05d]" name="verifyLoginValidUserValidPassword" class="com.HRMS.Scripts.LoginTest"/>
+        <method signature="TrainingTest.verifyTrainingButtonstatus()[pri:17, instance:com.HRMS.Scripts.TrainingTest@23202fce]" name="verifyTrainingButtonstatus" class="com.HRMS.Scripts.TrainingTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-04-03T23:24:43 AEST" name="Test" finished-at="2023-04-03T23:25:14 AEST" duration-ms="30722">
+    <test started-at="2023-04-05T11:08:38 AEST" name="Test" finished-at="2023-04-05T11:10:04 AEST" duration-ms="86365">
       <class name="com.HRMS.Scripts.FinanceTest">
-        <test-method signature="verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:02 AEST" name="verifyAddedAccountDetails" description="verify newly added account is listed" finished-at="2023-04-03T23:25:05 AEST" duration-ms="3287" status="PASS">
+        <test-method signature="verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@37911f88]" started-at="2023-04-05T11:09:47 AEST" name="verifyAddedAccountDetails" description="verify newly added account is listed" finished-at="2023-04-05T11:09:49 AEST" duration-ms="2228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedAccountDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:05 AEST" name="afterMethod" finished-at="2023-04-03T23:25:05 AEST" duration-ms="231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddedAccountDetails status=SUCCESS method=FinanceTest.verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@2bec854f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:05 AEST" name="verifyFixedAccountBalance" description="verify the  account balance is listed" finished-at="2023-04-03T23:25:06 AEST" duration-ms="403" status="PASS">
+        <test-method signature="verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@37911f88]" started-at="2023-04-05T11:09:49 AEST" name="verifyFixedAccountBalance" description="verify the  account balance is listed" finished-at="2023-04-05T11:09:49 AEST" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFixedAccountBalance -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:06 AEST" name="afterMethod" finished-at="2023-04-03T23:25:06 AEST" duration-ms="267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyFixedAccountBalance status=SUCCESS method=FinanceTest.verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@2bec854f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyAddedPayeeDetails()[pri:26, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:06 AEST" name="verifyAddedPayeeDetails" description="verify newly added payee is listed" finished-at="2023-04-03T23:25:09 AEST" duration-ms="2735" status="PASS">
+        <test-method signature="verifyAddedPayeeDetails()[pri:26, instance:com.HRMS.Scripts.FinanceTest@37911f88]" started-at="2023-04-05T11:09:49 AEST" name="verifyAddedPayeeDetails" description="verify newly added payee is listed" finished-at="2023-04-05T11:09:52 AEST" duration-ms="2523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedPayeeDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:09 AEST" name="afterMethod" finished-at="2023-04-03T23:25:09 AEST" duration-ms="250" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddedPayeeDetails status=SUCCESS method=FinanceTest.verifyAddedPayeeDetails()[pri:26, instance:com.HRMS.Scripts.FinanceTest@2bec854f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyPayerDetails()[pri:27, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:09 AEST" name="verifyPayerDetails" description="verify the added payer details are deleted" finished-at="2023-04-03T23:25:13 AEST" duration-ms="4430" status="PASS">
+        <test-method signature="verifyPayerDetails()[pri:27, instance:com.HRMS.Scripts.FinanceTest@37911f88]" started-at="2023-04-05T11:09:52 AEST" name="verifyPayerDetails" description="verify the added payer details are deleted" finished-at="2023-04-05T11:09:56 AEST" duration-ms="4299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPayerDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@2bec854f]" started-at="2023-04-03T23:25:13 AEST" name="afterMethod" finished-at="2023-04-03T23:25:14 AEST" duration-ms="238" status="PASS">
+      </class> <!-- com.HRMS.Scripts.FinanceTest -->
+      <class name="com.HRMS.Scripts.StaffTest">
+        <test-method signature="verifyAddedRoleisListed()[pri:5, instance:com.HRMS.Scripts.StaffTest@560348e6]" started-at="2023-04-05T11:08:57 AEST" name="verifyAddedRoleisListed" description="Verify the coreHR checkbox is not selected and added role is listed" finished-at="2023-04-05T11:09:01 AEST" duration-ms="3580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddedRoleisListed -->
+        <test-method signature="verifyAddedRoleisDeleted()[pri:6, instance:com.HRMS.Scripts.StaffTest@560348e6]" started-at="2023-04-05T11:09:01 AEST" name="verifyAddedRoleisDeleted" description="Verify the newly added role is deleted" finished-at="2023-04-05T11:09:03 AEST" duration-ms="1680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddedRoleisDeleted -->
+        <test-method signature="verifyCompanySelection()[pri:7, instance:com.HRMS.Scripts.StaffTest@560348e6]" started-at="2023-04-05T11:09:03 AEST" name="verifyCompanySelection" description="Verify the given  company is selected" finished-at="2023-04-05T11:09:05 AEST" duration-ms="2466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanySelection -->
+        <test-method signature="verifyCompanyStaffRecords()[pri:8, instance:com.HRMS.Scripts.StaffTest@560348e6]" started-at="2023-04-05T11:09:05 AEST" name="verifyCompanyStaffRecords" description="Verify selected company staff details" finished-at="2023-04-05T11:09:07 AEST" duration-ms="1789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyStaffRecords -->
+        <test-method signature="verifyfilterButtonStatus()[pri:9, instance:com.HRMS.Scripts.StaffTest@560348e6]" started-at="2023-04-05T11:09:07 AEST" name="verifyfilterButtonStatus" description="Verify filter button is enabled" finished-at="2023-04-05T11:09:09 AEST" duration-ms="1842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyfilterButtonStatus -->
+        <test-method signature="checkActiveOptionStatus()[pri:10, instance:com.HRMS.Scripts.StaffTest@560348e6]" started-at="2023-04-05T11:09:09 AEST" name="checkActiveOptionStatus" description="Verify Active Option is displayed" finished-at="2023-04-05T11:09:10 AEST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkActiveOptionStatus -->
+      </class> <!-- com.HRMS.Scripts.StaffTest -->
+      <class name="com.HRMS.Scripts.OrganizationTest">
+        <test-method signature="verifyAddedPersonDetails(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:11, instance:com.HRMS.Scripts.OrganizationTest@1df8b5b8]" started-at="2023-04-05T11:09:10 AEST" name="verifyAddedPersonDetails" description="verify the  company details added person is displayed" data-provider="CompanyType" finished-at="2023-04-05T11:09:15 AEST" duration-ms="4555" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPayerDetails status=SUCCESS method=FinanceTest.verifyPayerDetails()[pri:27, instance:com.HRMS.Scripts.FinanceTest@2bec854f] output={null}]]]>
+                <![CDATA[IBS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9678990]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[http://demo]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kochi]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[689456]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.HRMS.Scripts.FinanceTest -->
+        </test-method> <!-- verifyAddedPersonDetails -->
+        <test-method signature="verifyOfficialDocumentsType()[pri:12, instance:com.HRMS.Scripts.OrganizationTest@1df8b5b8]" started-at="2023-04-05T11:09:15 AEST" name="verifyOfficialDocumentsType" description="verify the type of Official documents attached" finished-at="2023-04-05T11:09:18 AEST" duration-ms="3359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOfficialDocumentsType -->
+        <test-method signature="verifyLocationDetails()[pri:13, instance:com.HRMS.Scripts.OrganizationTest@1df8b5b8]" started-at="2023-04-05T11:09:18 AEST" name="verifyLocationDetails" description="verify the entered location is listed" finished-at="2023-04-05T11:09:21 AEST" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLocationDetails -->
+        <test-method signature="verifyDesignationAdded()[pri:14, instance:com.HRMS.Scripts.OrganizationTest@1df8b5b8]" started-at="2023-04-05T11:09:21 AEST" name="verifyDesignationAdded" description="verify the added designation is listed" finished-at="2023-04-05T11:09:24 AEST" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDesignationAdded -->
+        <test-method signature="verifyAddedCompaanyPolicyTitle()[pri:15, instance:com.HRMS.Scripts.OrganizationTest@1df8b5b8]" started-at="2023-04-05T11:09:24 AEST" name="verifyAddedCompaanyPolicyTitle" description="verify new company policy  is added" finished-at="2023-04-05T11:09:27 AEST" duration-ms="3225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddedCompaanyPolicyTitle -->
+        <test-method signature="verifyCompanyPolicyUpdated()[pri:16, instance:com.HRMS.Scripts.OrganizationTest@1df8b5b8]" started-at="2023-04-05T11:09:27 AEST" name="verifyCompanyPolicyUpdated" description="verify the company policy  is updated" finished-at="2023-04-05T11:09:30 AEST" duration-ms="2664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompanyPolicyUpdated -->
+      </class> <!-- com.HRMS.Scripts.OrganizationTest -->
       <class name="com.HRMS.Scripts.LoginTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.HRMS.Scripts.LoginTest@14f232c4]" started-at="2023-04-03T23:24:43 AEST" name="beforeTest" finished-at="2023-04-03T23:24:51 AEST" duration-ms="8343" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.HRMS.Scripts.LoginTest@2205a05d]" started-at="2023-04-05T11:08:38 AEST" name="setUp" finished-at="2023-04-05T11:08:49 AEST" duration-ms="10985" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,8 +142,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@14f232c4]" started-at="2023-04-03T23:24:53 AEST" name="verifyLoginValidUserValidPassword" description="Verifying LoginPage with valid username and password" data-provider="ValidUserValidPassword" finished-at="2023-04-03T23:25:01 AEST" duration-ms="8893" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@2205a05d]" started-at="2023-04-05T11:08:50 AEST" name="verifyLoginValidUserValidPassword" description="Verifying LoginPage with valid username and password" data-provider="ValidUserValidPassword" finished-at="2023-04-05T11:08:57 AEST" duration-ms="7551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,22 +159,57 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.LoginTest@14f232c4]" started-at="2023-04-03T23:25:01 AEST" name="afterMethod" finished-at="2023-04-03T23:25:02 AEST" duration-ms="351" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@14f232c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.HRMS.Scripts.LoginTest@2205a05d]" started-at="2023-04-05T11:10:04 AEST" name="tearDown" finished-at="2023-04-05T11:10:04 AEST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.HRMS.Scripts.LoginTest@14f232c4]" started-at="2023-04-03T23:25:14 AEST" name="afterTest" finished-at="2023-04-03T23:25:14 AEST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- tearDown -->
       </class> <!-- com.HRMS.Scripts.LoginTest -->
+      <class name="com.HRMS.Scripts.HRReportsPageTest">
+        <test-method signature="verifyProjectReportStatusisListed()[pri:28, instance:com.HRMS.Scripts.HRReportsPageTest@6f1c29b7]" started-at="2023-04-05T11:09:56 AEST" name="verifyProjectReportStatusisListed" description="verify the status of  selected Project Report" finished-at="2023-04-05T11:09:59 AEST" duration-ms="2879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProjectReportStatusisListed -->
+        <test-method signature="verifyUserReportDetails()[pri:29, instance:com.HRMS.Scripts.HRReportsPageTest@6f1c29b7]" started-at="2023-04-05T11:09:59 AEST" name="verifyUserReportDetails" description="verify the UserRoles Report is listed" finished-at="2023-04-05T11:10:02 AEST" duration-ms="2698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserReportDetails -->
+        <test-method signature="verifyEmployeeIDisListed()[pri:30, instance:com.HRMS.Scripts.HRReportsPageTest@6f1c29b7]" started-at="2023-04-05T11:10:02 AEST" name="verifyEmployeeIDisListed" description="verify the employeeID is listed in EmployeeReport" finished-at="2023-04-05T11:10:04 AEST" duration-ms="1863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployeeIDisListed -->
+      </class> <!-- com.HRMS.Scripts.HRReportsPageTest -->
+      <class name="com.HRMS.Scripts.TrainingTest">
+        <test-method signature="verifyTrainingButtonstatus()[pri:17, instance:com.HRMS.Scripts.TrainingTest@23202fce]" started-at="2023-04-05T11:09:30 AEST" name="verifyTrainingButtonstatus" description="check whether the Training button is enabled" finished-at="2023-04-05T11:09:30 AEST" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrainingButtonstatus -->
+        <test-method signature="verifyTrainingTypeSelected()[pri:18, instance:com.HRMS.Scripts.TrainingTest@23202fce]" started-at="2023-04-05T11:09:30 AEST" name="verifyTrainingTypeSelected" description="verifying the selected training type is displayed in the list" finished-at="2023-04-05T11:09:32 AEST" duration-ms="2344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrainingTypeSelected -->
+        <test-method signature="verifyTrainingTypeUpdated()[pri:19, instance:com.HRMS.Scripts.TrainingTest@23202fce]" started-at="2023-04-05T11:09:32 AEST" name="verifyTrainingTypeUpdated" description="verifying the training type is updated" finished-at="2023-04-05T11:09:34 AEST" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrainingTypeUpdated -->
+        <test-method signature="verifyContactNumberVisibility()[pri:20, instance:com.HRMS.Scripts.TrainingTest@23202fce]" started-at="2023-04-05T11:09:34 AEST" name="verifyContactNumberVisibility" description="verify the given contact number is added" finished-at="2023-04-05T11:09:37 AEST" duration-ms="3303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactNumberVisibility -->
+      </class> <!-- com.HRMS.Scripts.TrainingTest -->
+      <class name="com.HRMS.Scripts.ProjectManagerTest">
+        <test-method signature="verifyProjectCount()[pri:21, instance:com.HRMS.Scripts.ProjectManagerTest@7b993c65]" started-at="2023-04-05T11:09:37 AEST" name="verifyProjectCount" description="verify the project count" finished-at="2023-04-05T11:09:41 AEST" duration-ms="3819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProjectCount -->
+        <test-method signature="verifyCountrySelection()[pri:22, instance:com.HRMS.Scripts.ProjectManagerTest@7b993c65]" started-at="2023-04-05T11:09:41 AEST" name="verifyCountrySelection" description="verify the given country is selected" finished-at="2023-04-05T11:09:45 AEST" duration-ms="3269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountrySelection -->
+        <test-method signature="verifyTaxTypeEntered()[pri:23, instance:com.HRMS.Scripts.ProjectManagerTest@7b993c65]" started-at="2023-04-05T11:09:45 AEST" name="verifyTaxTypeEntered" description="verify the added tax type " finished-at="2023-04-05T11:09:47 AEST" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaxTypeEntered -->
+      </class> <!-- com.HRMS.Scripts.ProjectManagerTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

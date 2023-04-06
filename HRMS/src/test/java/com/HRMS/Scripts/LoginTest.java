@@ -24,7 +24,7 @@ public class LoginTest extends TestBase  {
 	String loginTestdataSheet=Constants.Sheet1;
 
 	@Test(dataProviderClass = DataProviders.class,dataProvider="ValidUserInvalidPassword",
-			priority=1,enabled=false,description="Verifying LoginPage with valid username and invalid password",
+			priority=1,description="Verifying LoginPage with valid username and invalid password",
 			retryAnalyzer=com.HRMS.Listeners.RetryAnalyzer.class)
 	public void verifyLoginValidUserInvalidPassword(String username,int password)  {
 		objLogin=new LoginPage(driver);
@@ -36,7 +36,7 @@ public class LoginTest extends TestBase  {
 	}
 
 	@Test(dataProviderClass = DataProviders.class,dataProvider="InvalidUserValidPassword",
-			priority=2,enabled=false,description="Verifying LoginPage with invalid username and valid password")
+			priority=2,description="Verifying LoginPage with invalid username and valid password")
 	public void verifyLoginInvalidUserValidPassword(String username,int password) {
 		objLogin=new LoginPage(driver);
 		objLogin.clearLoginFields();
@@ -48,7 +48,7 @@ public class LoginTest extends TestBase  {
 	}
 
 	@Test(dataProviderClass = DataProviders.class,dataProvider="InvalidUserInvalidPassword",
-			priority=3,enabled=false,description="Verifying LoginPage with invalid username and invalid password",retryAnalyzer=com.HRMS.Listeners.RetryAnalyzer.class)
+			priority=3,description="Verifying LoginPage with invalid username and invalid password",retryAnalyzer=com.HRMS.Listeners.RetryAnalyzer.class)
 	public void verifyLoginInvalidUserInvalidPassword(String username,int password) {
 		objLogin=new LoginPage(driver);
 		objLogin.clearLoginFields();
