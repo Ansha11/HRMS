@@ -12,9 +12,9 @@
 			  <include name="verifyLoginValidUserValidPassword"></include>
 		  </methods>
 		  </class>
-		   <class name="com.HRMS.Scripts.TrainingTest"> 
+		   <class name="com.HRMS.Scripts.FinanceTest"> 
 		  <methods>
-			  <include name="verifyTrainingButtonstatus"></include>
+			  <include name="verifyAddedAccountDetails()"></include>
 		  </methods>
 		  </class>
     </classes>
@@ -27,9 +27,9 @@
 			  <include name="verifyLoginValidUserValidPassword"></include>
 		  </methods> 
 		  </class>
-		  <class name="com.HRMS.Scripts.TrainingTest"> 
+		  <class name="com.HRMS.Scripts.FinanceTest"> 
 		  <methods>
-			  <include name="verifyTrainingButtonstatus"></include>
+			  <include name="verifyAddedAccountDetails()"></include>
 		  </methods> 
 		  </class>
     </classes>

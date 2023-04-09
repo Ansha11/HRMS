@@ -20,7 +20,7 @@ public class StaffTest extends TestBase{
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
 	
-	@Test(priority=5,description="Verify the coreHR checkbox is not selected and added role is listed")
+	@Test(priority=5,description="Verify the coreHR checkbox is not selected and added role is listed",groups= {"regression"})
 	public void verifyAddedRoleisListed() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickStaffButton();
@@ -29,12 +29,15 @@ public class StaffTest extends TestBase{
 		boolean coreHRStatus=objStaff.coreHRCheckboxStatus();
 		Assert.assertFalse(coreHRStatus);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ROLE_ADDED_MESSAGE);
+		extentTest.get().assignCategory("regression");
+
 	}
-	@Test(priority=6,description="Verify the newly added role is deleted")
+	@Test(priority=6,description="Verify the newly added role is deleted",groups= {"regression"})
 	public void verifyAddedRoleisDeleted() {
 		objStaff=new StaffPage(driver);
 		Assert.assertEquals(objStaff.deleteAddedRole(),Constants.SEARCH_DETAILS);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ROLE_DELETED_MESSAGE);
+		extentTest.get().assignCategory("regression");
 
 	}
 	@Test(priority=7,description="Verify the given  company is selected")
@@ -63,8 +66,8 @@ public class StaffTest extends TestBase{
 		Assert.assertTrue(objStaff.checkFilterButtonStatus());
 	extentTest.get().log(Status.PASS, ExtentLogMessage.FILTERBUTTON_STATUS);
 	}
+	
 	@Test(priority=10,description="Verify Active Option is displayed")
-
 	public void checkActiveOptionStatus() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickFilterButton();

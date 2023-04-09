@@ -9,6 +9,7 @@ import com.HRMS.Base.TestBase;
 import com.HRMS.Constants.Constants;
 import com.HRMS.Constants.ExtentLogMessage;
 import com.HRMS.Listeners.TestListener;
+import com.HRMS.Pages.PageFunctions;
 import com.HRMS.Pages.StaffPage;
 import com.HRMS.Pages.TrainingPage;
 import com.HRMS.Utilities.ExcelUtilities;
@@ -52,12 +53,8 @@ public class TrainingTest extends TestBase{
 	public void verifyContactNumberVisibility()  {
 		objTraining=new TrainingPage(driver);
 		objTraining.clicktrainersList();
-		String fname=RandomUtilities.getfName();
-		String lname=RandomUtilities.getlName();
-		String email=RandomUtilities.getRandomEmail();
-		objTraining.addNewTrainer(fname, lname,email);
-		objTraining.setContactNumber(Constants.CONTACT_NUMBER);
-		objTraining.selectCompany();
+		PageFunctions obj=new PageFunctions();
+		obj.setTrainerDetails(driver);
 		objTraining.clickTrainingButton();
 		Assert.assertTrue(objTraining.contactNumberDisplayed());
 		extentTest.get().log(Status.PASS, ExtentLogMessage.CONTACT_NUMBER_MESSAGE);

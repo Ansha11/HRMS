@@ -101,6 +101,7 @@ public class OrganizationPage {
 		organization.click();
 	}
 	public void clickCompany() {
+		organization.click();
 		companyButton.click();
 		addNew.click();
 	}

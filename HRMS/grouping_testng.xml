@@ -5,19 +5,19 @@
 		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
 	</listeners>
   <test thread-count="5" name="TestGrouping">
-	  <parameter name="browser" value="edge"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
 	  <groups>
 		  <run>
-			  <include name="smoke"></include>
+			  <include name="regression"></include>
 		  </run>
 	  </groups>
     <classes>
 	<class name="com.HRMS.Base.TestBase"/>
       <class name="com.HRMS.Scripts.LoginTest"/>
-      <class name="com.HRMS.Scripts.TrainingTest"/>
+            <class name="com.HRMS.Scripts.TrainingTest"/>
       <class name="com.HRMS.Scripts.FinanceTest"/>
       <class name="com.HRMS.Scripts.HRReportsPageTest"/>
-
+      
     </classes>
   </test> 
 </suite> 

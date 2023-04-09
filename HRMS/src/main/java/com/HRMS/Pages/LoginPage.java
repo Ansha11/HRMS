@@ -38,6 +38,7 @@ public class LoginPage {
 	}
 	public void clickLogin() {
 		PageUtilities.clickElement(driver,login );
+		
 	}
 	public String LoginAccountText() {
 		return(loginAccount.getText());

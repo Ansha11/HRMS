@@ -15,10 +15,8 @@ public class HRReportsPage {
 
 	@FindBy(xpath="//span[text()='HR Reports']")
 	WebElement hrReports;
-	//@FindBy(xpath="//a[text()=' Attendance Report ']")
-	//WebElement attendenceReport;
-	//@FindBy(xpath="//td[text()='No data available in table']")
-	//WebElement reportDetails;
+	@FindBy(xpath="//a[text()=' Attendance Report ']")
+	WebElement attendenceReport;
 	@FindBy(xpath="//a[text()=' Projects Report ']")
 	WebElement projectReport;
 	@FindBy(xpath="//select[@name='project_id']")
@@ -27,25 +25,20 @@ public class HRReportsPage {
 	WebElement get;
 	@FindBy(xpath="//td[text()='Not Started']")
 	WebElement statusListed;
-	//@FindBy(xpath="//select[@name='company_id']")
-	//WebElement company;
-	//@FindBy(xpath="//select[@id='employee_id']")
-//	WebElement employee;
-	//@FindBy(xpath="//button[text()=' Get ']")
-	//WebElement get;
-	//@FindBy(xpath="//td[text()='Absent']")
-	//WebElement attendenceStatus;
+	@FindBy(xpath="//select[@name='company_id']")
+	WebElement company;
+	@FindBy(xpath="//select[@name='employee_id']")
+	WebElement employee;
+	@FindBy(xpath="//td[text()='Absent']")
+	WebElement attendenceStatus;
 	@FindBy(xpath="//a[text()=' User Roles Report ']")
 	WebElement userRolesReport;
 	@FindBy(xpath="//select[@name='role_id']")
 	WebElement userRoles;
-	
 	@FindBy(id="xin_table_info")
 	WebElement resultDisp;
-	
 	@FindBy(xpath="//a[text()=' Employees Report ']")
 	WebElement employeesReport;
-
 	@FindBy(xpath="//input[@type='search']")
 	WebElement search;
 	@FindBy(xpath="//td[text()='jsmith12']")
@@ -61,16 +54,14 @@ public class HRReportsPage {
 	public void clickHRReports() {
 		hrReports.click();
 	}
-	/*public void clickAttendenceReport() {
+	public void clickAttendenceReport() {
 		PageUtilities.scrollWindow(driver,attendenceReport );
 		attendenceReport.click();
 		}
-	public boolean checkAttendenceReportDetails() {
-		return(attenDetailsDefault.isDisplayed());
-	}*/
-	/*public void selectCompany() {
+	
+	public void selectCompany() {
 		Select obj=PageUtilities.selectClassDropdown(driver, company);
-		obj.selectByVisibleText(Constants.COMPANY_FILTER);
+		obj.selectByVisibleText(Constants.COMPANY_NAME);
 	}
 	public void selectEmployee() {
 		Select obj=PageUtilities.selectClassDropdown(driver, employee);
@@ -79,9 +70,9 @@ public class HRReportsPage {
 	public void clickGet() {
 		get.click();
 	}
-public String checkEnteredAttendenceStatus() {
-	return(attendenceStatus.getText());
-}*/
+public boolean checkEnteredAttendenceStatus() {
+	return(attendenceStatus.isDisplayed());
+}
 public void checkProjectReport() {
 	PageUtilities.scrollWindow(driver,projectReport);
 	projectReport.click();
@@ -93,9 +84,6 @@ public void checkProjectReport() {
 		return(statusListed.getText());
 	}
 	
-	/*public boolean checkEnteredReportDetails() {
-		return(reportDetails.isDisplayed());
-	}*/
 	public void clickUserRolesReport() {
 		PageUtilities.scrollWindow(driver,userRolesReport);
 		userRolesReport.click();

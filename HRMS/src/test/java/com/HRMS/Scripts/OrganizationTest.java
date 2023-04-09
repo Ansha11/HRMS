@@ -11,6 +11,7 @@ import com.HRMS.Constants.ExtentLogMessage;
 import com.HRMS.DataProvider.DataProviders;
 import com.HRMS.Listeners.TestListener;
 import com.HRMS.Pages.OrganizationPage;
+import com.HRMS.Pages.PageFunctions;
 import com.HRMS.Utilities.ExcelUtilities;
 import com.HRMS.Utilities.RandomUtilities;
 import com.aventstack.extentreports.ExtentTest;
@@ -25,23 +26,12 @@ public class OrganizationTest extends TestBase{
 			description="verify the  company details added person is displayed",groups= {"regression"})
 	public void verifyAddedPersonDetails(String companyName,int regNumber,int contactNumber,String url,String username,String password,String city,int zipcode)  {
 		objOrg=new OrganizationPage(driver);
-		objOrg.clickOrganization();
 		objOrg.clickCompany();
-		objOrg.setcompanyname(companyName);
-		objOrg.selectCompanyType();
-		objOrg.setRegistrationNumberandContactNumber(regNumber,contactNumber);
-		String email=RandomUtilities.getRandomEmail();
-		objOrg.setEmailandUrl(email,url);
-		objOrg.setUsernameandPassword(username,password);
-		objOrg.setCity(city);
-		objOrg.setZipcode(zipcode);
-		objOrg.selectCountry(Constants.COUNTRY_SELECT);
-		objOrg.setLogo();
-		objOrg.clickSave();
+		PageFunctions obj=new PageFunctions();
+		obj.addNewCompanyDetails(driver,companyName,regNumber,contactNumber,url,username,password,city,zipcode);
 		objOrg.enterSearchData(companyName);
 		Assert.assertEquals(objOrg.checkAddedEmployee(),Constants.ADDEDPERSON);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ADDEDPERSON_INFO);
-		extentTest.get().assignCategory("regression");
 
 	}
 	@Test(priority=12,description="verify the type of Official documents attached")
@@ -77,7 +67,6 @@ public class OrganizationTest extends TestBase{
 	public void verifyAddedCompaanyPolicyTitle() {  
 		objOrg=new OrganizationPage(driver);
 		objOrg.addCompanyPolicy();
-		objOrg.clickOrganization();
 		Assert.assertTrue(objOrg.checkAddedTitle());
 		extentTest.get().log(Status.PASS, ExtentLogMessage.POLICY_ADDED_MESSAGE);
 
@@ -88,7 +77,9 @@ public class OrganizationTest extends TestBase{
 		objOrg.updateCompanyPolicy();
 		Assert.assertTrue(objOrg.checkNewPolicy());
 		objOrg.deletePolicy();
+		objOrg.clickOrganization();
 		extentTest.get().log(Status.PASS, ExtentLogMessage.POLICY_UPDATE_MESSAGE);
 
 }
+	
 	}

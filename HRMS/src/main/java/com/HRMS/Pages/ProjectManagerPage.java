@@ -74,19 +74,22 @@ public class ProjectManagerPage {
 	}
 
 	public void addNewClientData() {
+		projectManager.click();
 		client.click();
 		addNew.click();
 	}
-	public void setName(String name1) {
+	public void setNameandEmail(String name1,String email1) {
 		name.sendKeys(name1);	
-	}
-	public void setEmail(String email1) {
 		email.sendKeys(email1);
+
 	}
+	
 	public String selectCountry() {
 		Select obj=PageUtilities.selectClassDropdown(driver,country);
 		obj.selectByIndex(1);
 		String countryselected=obj.getFirstSelectedOption().getText();
+		save.click();
+
 		return countryselected;
 	}
 

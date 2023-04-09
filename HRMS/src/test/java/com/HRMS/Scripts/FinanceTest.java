@@ -25,11 +25,10 @@ public class FinanceTest extends TestBase {
 	  objFinance.Scroll();
 	  objFinance.clickFinanceButton();
 	  objFinance.addAccountDetails();
-	  objFinance.clickSave();
 	  objFinance.searchEnteredAccount();
 	  Assert.assertEquals(objFinance.checkEnteredAccountName(), Constants.ACCOUNT_NAME);
-		extentTest.get().log(Status.PASS, ExtentLogMessage.ACCOUNT_DETAILS);
-		extentTest.get().assignCategory("smoke");
+	 extentTest.get().log(Status.PASS, ExtentLogMessage.ACCOUNT_DETAILS);
+	extentTest.get().assignCategory("smoke");
 
 }
   @Test(priority=25,description="verify the  account balance is listed",groups= {"smoke"})
@@ -61,11 +60,5 @@ public class FinanceTest extends TestBase {
 		extentTest.get().log(Status.PASS, ExtentLogMessage.PAYER_DETAILS);
 
   }
- /* @Test(priority=5,description="verify the status of Home button")
-  public void verifyHomestatus()  {
-	  objFinance=new FinancePage(driver);
-	 Assert.assertTrue(objFinance.homeButtonStatus());
-		extentTest.get().log(Status.PASS, ExtentLogMessage.HOME_STATUS_MESSAGE);
-
-}*/
+ 
 }

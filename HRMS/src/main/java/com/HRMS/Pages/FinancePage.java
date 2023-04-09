@@ -68,6 +68,8 @@ public class FinancePage {
 		accountName.sendKeys(Constants.ACCOUNT_NAME);
 		accountBalance.sendKeys(String.valueOf(Constants.ACCOUNT_BALANCE));
 		accountNumber.sendKeys(String.valueOf(Constants.ACCOUNT_NUMBER));
+		save.click();
+
 	}
 	public void clickSave() {
 		WaitUtilities.waitForElementToBeVisible(driver, save);

@@ -5,30 +5,18 @@
     <listener class-name="com.HRMS.Listeners.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.HRMS.Scripts.StaffTest">
+      <class name="com.HRMS.Scripts.TrainingTest">
         <methods>
-          <include name="checkActiveOptionStatus"/>
-          <include name="verifyfilterButtonStatus"/>
-          <include name="verifyAddedRoleisListed"/>
-          <include name="verifyCompanyStaffRecords"/>
+          <include name="verifyTrainingButtonstatus"/>
+          <include name="verifyContactNumberVisibility"/>
+          <include name="verifyTrainingTypeUpdated"/>
+          <include name="verifyTrainingTypeSelected"/>
           <include name="setUp"/>
-          <include name="verifyCompanySelection"/>
-          <include name="tearDown"/>
-          <include name="verifyAddedRoleisDeleted"/>
-        </methods>
-      </class> <!-- com.HRMS.Scripts.StaffTest -->
-      <class name="com.HRMS.Scripts.FinanceTest">
-        <methods>
-          <include name="verifyFixedAccountBalance"/>
-          <include name="verifyAddedAccountDetails"/>
-          <include name="verifyAddedPayeeDetails"/>
-          <include name="setUp"/>
-          <include name="verifyPayerDetails"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.HRMS.Scripts.FinanceTest -->
+      </class> <!-- com.HRMS.Scripts.TrainingTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

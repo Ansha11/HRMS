@@ -5,18 +5,20 @@
 		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
 	</listeners>
   <test thread-count="5" name="Test">
-	  <parameter name="browser" value="edge"></parameter>
+	  <parameter name="browser" value="chrome"></parameter>
     <classes>
 		       <class name="com.HRMS.Scripts.LoginTest"/>
+		       <class name="com.HRMS.Scripts.StaffTest"/>
 
-       <class name="com.HRMS.Scripts.StaffTest"/>
-          		       <class name="com.HRMS.Scripts.OrganizationTest"/>
+		       <class name="com.HRMS.Scripts.OrganizationTest"/>
 		       <class name="com.HRMS.Scripts.TrainingTest"/>
-		       <class name="com.HRMS.Scripts.ProjectManagerTest"/>
+		    
 
-       <class name="com.HRMS.Scripts.FinanceTest"/>
+		       		       
 
-            		       <class name="com.HRMS.Scripts.HRReportsPageTest"/>
+		      
+		      
+      
 
     </classes>
   </test> <!-- Test -->

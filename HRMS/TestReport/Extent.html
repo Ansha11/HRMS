@@ -41,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a>
-				<span class='suite-start-time'>6 Apr 2023, 11:47:57</span>
+				<span class='suite-start-time'>9 Apr 2023, 09:56:13</span>
 			</a>
 			<a>
 				<span>v3.0.0</span>
@@ -80,6 +80,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>smoke</a></li>
+					<li><a href='#'>regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -128,15 +129,135 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyLoginValidUserValidPassword</span>
-						<span class='test-time'>6 Apr 2023, 11:48:24</span>
+						<span class='test-name'>verifyLoginValidUserInvalidPassword</span>
+						<span class='test-time'>9 Apr 2023, 09:56:26</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>6 Apr 2023, 11:48:24</span>
-	<span class='label end-time'>6 Apr 2023, 11:48:43</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+18ms</span>
+	<span class='label start-time'>9 Apr 2023, 09:56:26</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 24s+48ms</span>
+</div>
+	<div class='test-desc'>Verifying LoginPage with valid username and invalid password </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:56:27</td>
+					<td class='step-details'>Login failed with invalid credential</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:56:27</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLoginInvalidUserValidPassword</span>
+						<span class='test-time'>9 Apr 2023, 09:56:27</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:56:27</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 23s+289ms</span>
+</div>
+	<div class='test-desc'>Verifying LoginPage with invalid username and valid password </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:56:28</td>
+					<td class='step-details'>Login failed with invalid credential</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:56:28</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLoginInvalidUserInvalidPassword</span>
+						<span class='test-time'>9 Apr 2023, 09:56:28</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:56:28</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 22s+424ms</span>
+</div>
+	<div class='test-desc'>Verifying LoginPage with invalid username and invalid password </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:56:29</td>
+					<td class='step-details'>Login failed with invalid credential</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:56:29</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLoginValidUserValidPassword</span>
+						<span class='test-time'>9 Apr 2023, 09:56:29</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:56:29</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 21s+464ms</span>
 </div>
 	<div class='test-desc'>Verifying LoginPage with valid username and password </div>
 	<div class='test-attributes'>
@@ -156,12 +277,667 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:48:42</td>
+					<td class='timestamp'>09:56:54</td>
 					<td class='step-details'>Login success with correct credential</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:48:42</td>
+					<td class='timestamp'>09:56:54</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyAddedRoleisListed</span>
+						<span class='test-time'>9 Apr 2023, 09:56:54</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:56:54</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 56s+283ms</span>
+</div>
+	<div class='test-desc'>Verify the coreHR checkbox is not selected and added role is listed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>regression</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:09</td>
+					<td class='step-details'>New role is added and CoreHR checkbox is not selected</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:09</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyAddedRoleisDeleted</span>
+						<span class='test-time'>9 Apr 2023, 09:57:09</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:09</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 41s+123ms</span>
+</div>
+	<div class='test-desc'>Verify the newly added role is deleted </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>regression</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:11</td>
+					<td class='step-details'>Added role is deleted</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:11</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyCompanySelection</span>
+						<span class='test-time'>9 Apr 2023, 09:57:11</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:11</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 39s+458ms</span>
+</div>
+	<div class='test-desc'>Verify the given  company is selected </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:14</td>
+					<td class='step-details'>Company  is selected</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:14</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyCompanyStaffRecords</span>
+						<span class='test-time'>9 Apr 2023, 09:57:14</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:14</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 36s+962ms</span>
+</div>
+	<div class='test-desc'>Verify selected company staff details </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:15</td>
+					<td class='step-details'>Staff 'John Manuel' is found</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:15</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyfilterButtonStatus</span>
+						<span class='test-time'>9 Apr 2023, 09:57:15</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:15</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+315ms</span>
+</div>
+	<div class='test-desc'>Verify filter button is enabled </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:16</td>
+					<td class='step-details'>Filter button is enabled</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:16</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>checkActiveOptionStatus</span>
+						<span class='test-time'>9 Apr 2023, 09:57:16</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:16</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+77ms</span>
+</div>
+	<div class='test-desc'>Verify Active Option is displayed </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:18</td>
+					<td class='step-details'>Active option is present</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:18</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyAddedPersonDetails</span>
+						<span class='test-time'>9 Apr 2023, 09:57:18</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:18</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+394ms</span>
+</div>
+	<div class='test-desc'>verify the  company details added person is displayed </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:24</td>
+					<td class='step-details'>Added person name is listed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:24</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyOfficialDocumentsType</span>
+						<span class='test-time'>9 Apr 2023, 09:57:24</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:24</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+437ms</span>
+</div>
+	<div class='test-desc'>verify the type of Official documents attached </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:27</td>
+					<td class='step-details'>Driving License is found</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:27</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyLocationDetails</span>
+						<span class='test-time'>9 Apr 2023, 09:57:27</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:27</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+401ms</span>
+</div>
+	<div class='test-desc'>verify the entered location is listed </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:30</td>
+					<td class='step-details'>Entered Location is listed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:30</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyDesignationAdded</span>
+						<span class='test-time'>9 Apr 2023, 09:57:30</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:30</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+806ms</span>
+</div>
+	<div class='test-desc'>verify the added designation is listed </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:33</td>
+					<td class='step-details'>New designation is added</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:33</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyAddedCompaanyPolicyTitle</span>
+						<span class='test-time'>9 Apr 2023, 09:57:33</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:33</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+296ms</span>
+</div>
+	<div class='test-desc'>verify new company policy  is added </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:37</td>
+					<td class='step-details'>New Company policy is added</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:37</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyCompanyPolicyUpdated</span>
+						<span class='test-time'>9 Apr 2023, 09:57:37</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:37</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+710ms</span>
+</div>
+	<div class='test-desc'>verify the company policy  is updated </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:40</td>
+					<td class='step-details'>Entered policy is updated</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:40</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyTrainingButtonstatus</span>
+						<span class='test-time'>9 Apr 2023, 09:57:40</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:40</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+687ms</span>
+</div>
+	<div class='test-desc'>check whether the Training button is enabled </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>smoke</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:40</td>
+					<td class='step-details'>Training button is enabled</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:40</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyTrainingTypeSelected</span>
+						<span class='test-time'>9 Apr 2023, 09:57:40</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:40</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+321ms</span>
+</div>
+	<div class='test-desc'>verifying the selected training type is displayed in the list </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:44</td>
+					<td class='step-details'>Type java is listed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:44</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyTrainingTypeUpdated</span>
+						<span class='test-time'>9 Apr 2023, 09:57:44</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:44</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+659ms</span>
+</div>
+	<div class='test-desc'>verifying the training type is updated </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:46</td>
+					<td class='step-details'>Training type is updated</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:46</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>verifyContactNumberVisibility</span>
+						<span class='test-time'>9 Apr 2023, 09:57:46</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>9 Apr 2023, 09:57:46</span>
+	<span class='label end-time'>9 Apr 2023, 09:57:51</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+956ms</span>
+</div>
+	<div class='test-desc'>verify the given contact number is added </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:50</td>
+					<td class='step-details'>Contact number is added</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>09:57:50</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -202,7 +978,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>1</span> test(s) passed</span>
+					<span><span class='strong'>20</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
@@ -217,7 +993,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>2</span> step(s) passed</span>
+					<span><span class='strong'>40</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
@@ -257,12 +1033,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>smoke</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -278,8 +1054,52 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>6 Apr 2023, 11:48:24</td>
-										<td class='linked' test-id='1'>verifyLoginValidUserValidPassword</td>
+										<td>9 Apr 2023, 09:56:29</td>
+										<td class='linked' test-id='4'>verifyLoginValidUserValidPassword</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>9 Apr 2023, 09:57:40</td>
+										<td class='linked' test-id='17'>verifyTrainingButtonstatus</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>regression</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>9 Apr 2023, 09:56:54</td>
+										<td class='linked' test-id='5'>verifyAddedRoleisListed</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>9 Apr 2023, 09:57:09</td>
+										<td class='linked' test-id='6'>verifyAddedRoleisDeleted</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -306,31 +1126,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>40</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>6 Apr 2023, 11:47:57</div>
+					<div class='panel-lead'>9 Apr 2023, 09:56:13</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>6 Apr 2023, 11:48:43</div>
+			 		<div class='panel-lead'>9 Apr 2023, 09:57:51</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>45,842ms</div>
+					<div class='panel-lead'>97,076ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -352,7 +1172,7 @@
 						</tr>
 						<tr>
 							<td>Java Version</td>
-							<td>17.0.6</td>
+							<td>17.0.5</td>
 						</tr>
 						<tr>
 							<td>Host Name</td>
@@ -374,7 +1194,13 @@
 						</tr>
 						<tr>
 							<td>smoke</td>
-							<td>1</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>regression</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
@@ -390,7 +1216,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 20,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -398,7 +1224,7 @@
 				skipParent: 0,
 				unknownParent: 0,
 				
-				passChild: 2,
+				passChild: 40,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
