@@ -40,5 +40,5 @@ public static final String PROJECT_FILTER="test";
 public static final String EMPLOYEE_NAME="John Smith";
 public static final String EMPLOYEE_ID="jsmith12";
 
-public static final String  abg="abc";
+
 }

@@ -33,56 +33,45 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 public class TestBase {
-	
+
 	public static Properties prop=null;
 	public  static  WebDriver driver;
-  
-  public void testBase() {
-	  
-	  try
-	  {
-		prop=new Properties();
-		FileInputStream ip=new FileInputStream(Constants.CONFIGPATH);
 
-		prop.load(ip);
-	  }
-	  catch(FileNotFoundException e)
-	  {
-		  e.printStackTrace();
-	  }
-	  catch(IOException e)
-	  {
-		  e.printStackTrace();
-	  }
-  }
-  
-  
-  @BeforeTest(groups = {"smoke"})
-  @Parameters({"browser"})
-  public void setUp(String browser1) {
-	  
-	  testBase();    																				
-	  
-	  
-		  DriverFactory.getInstance().setDriver(browser1);
-		  driver=DriverFactory.getInstance().getDriver();
-		 // System.out.println("in before test:"+driver);
-		 // System.out.println("in before test:"+Thread.currentThread().getId());  
+	public void testBase() {
+		try
+		{
+			prop=new Properties();
+			FileInputStream ip=new FileInputStream(Constants.CONFIGPATH);
 
-	  
-	  String baseUrl=prop.getProperty("url");
-	//  System.out.println("in before test-before url:"+driver);
-	  driver.get(baseUrl);
-	 // System.out.println("in before test-after url:"+driver);
-	  driver.manage().window().maximize();
-	  WaitUtilities.implicitWait(driver);
-  }
+			prop.load(ip);
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
 
-  @AfterTest
-  public void tearDown() {
-	  DriverFactory.getInstance().closeBrowser();
-	//  System.out.println("in after test:"+Thread.currentThread().getId());
-  }
+
+	@BeforeTest(groups = {"smoke"})
+	@Parameters({"browser"})
+	public void setUp(String browser1) {
+		testBase();    																				
+		DriverFactory.getInstance().setDriver(browser1);
+		driver=DriverFactory.getInstance().getDriver();
+		String baseUrl=prop.getProperty("url");
+		driver.get(baseUrl);
+		driver.manage().window().maximize();
+		WaitUtilities.implicitWait(driver);
+	}
+
+	@AfterTest
+	public void tearDown() {
+		DriverFactory.getInstance().closeBrowser();
+	}
 
 }
 

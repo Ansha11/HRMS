@@ -27,10 +27,10 @@ public class HRReportsPage {
 	WebElement statusListed;
 	@FindBy(xpath="//select[@name='company_id']")
 	WebElement company;
-	@FindBy(xpath="//select[@name='employee_id']")
-	WebElement employee;
-	@FindBy(xpath="//td[text()='Absent']")
-	WebElement attendenceStatus;
+	//@FindBy(xpath="//select[@name='employee_id']")
+	//WebElement employee;
+	//@FindBy(xpath="//td[text()='Absent']")
+	//WebElement attendenceStatus;
 	@FindBy(xpath="//a[text()=' User Roles Report ']")
 	WebElement userRolesReport;
 	@FindBy(xpath="//select[@name='role_id']")
@@ -54,25 +54,7 @@ public class HRReportsPage {
 	public void clickHRReports() {
 		hrReports.click();
 	}
-	public void clickAttendenceReport() {
-		PageUtilities.scrollWindow(driver,attendenceReport );
-		attendenceReport.click();
-		}
 	
-	public void selectCompany() {
-		Select obj=PageUtilities.selectClassDropdown(driver, company);
-		obj.selectByVisibleText(Constants.COMPANY_NAME);
-	}
-	public void selectEmployee() {
-		Select obj=PageUtilities.selectClassDropdown(driver, employee);
-		obj.selectByVisibleText(Constants.EMPLOYEE_NAME);
-	}
-	public void clickGet() {
-		get.click();
-	}
-public boolean checkEnteredAttendenceStatus() {
-	return(attendenceStatus.isDisplayed());
-}
 public void checkProjectReport() {
 	PageUtilities.scrollWindow(driver,projectReport);
 	projectReport.click();

@@ -55,6 +55,7 @@ public class FinancePage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 	public void Scroll() {
 		PageUtilities.scrollWindow(driver,finance);
 

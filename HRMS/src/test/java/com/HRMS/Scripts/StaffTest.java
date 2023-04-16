@@ -63,6 +63,7 @@ public class StaffTest extends TestBase{
 	public void verifyfilterButtonStatus() {
 		objStaff=new StaffPage(driver);
 		objStaff.clickEmployeelastLogin();
+
 		Assert.assertTrue(objStaff.checkFilterButtonStatus());
 	extentTest.get().log(Status.PASS, ExtentLogMessage.FILTERBUTTON_STATUS);
 	}
@@ -73,8 +74,8 @@ public class StaffTest extends TestBase{
 		objStaff.clickFilterButton();
 		objStaff.selectCompanytoFilter();
 		objStaff.clickGetButton();
-		objStaff.clickStaffButton();
 		Assert.assertTrue(objStaff.activeOptionStatus());
+		objStaff.clickStaffButton();
 		extentTest.get().log(Status.PASS, ExtentLogMessage.ACTIVE_OPTION);
 
 	}

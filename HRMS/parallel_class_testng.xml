@@ -5,7 +5,7 @@
 		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
 	</listeners>
   <test  name="PrallelClassesTesting">
-	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.HRMS.Scripts.StaffTest"/>
             <class name="com.HRMS.Scripts.OrganizationTest"/>

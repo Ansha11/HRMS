@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HRMS.Scripts.LoginTest">
+      <class name="com.HRMS.Scripts.TrainingTest">
         <methods>
-          <include name="verifyLoginValidUserValidPassword"/>
-          <include name="verifyLoginValidUserInvalidPassword"/>
-          <include name="verifyLoginInvalidUserInvalidPassword"/>
-          <include name="verifyLoginInvalidUserValidPassword"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
+          <include name="verifyTrainingButtonstatus"/>
+          <include name="verifyContactNumberVisibility"/>
+          <include name="verifyTrainingTypeUpdated"/>
+          <include name="verifyTrainingTypeSelected"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.HRMS.Scripts.LoginTest -->
+      </class> <!-- com.HRMS.Scripts.TrainingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

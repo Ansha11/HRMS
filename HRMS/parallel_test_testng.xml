@@ -5,26 +5,26 @@
 		<listener class-name="com.HRMS.Listeners.TestListener"></listener>
 	</listeners>
   <test  name="ParallelTesting-Test1">
-	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.HRMS.Scripts.StaffTest"/>	
 		 
     </classes>
   </test> 
   <test  name="ParallelTesting-Test2">
-	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.HRMS.Scripts.OrganizationTest"/>
     </classes>
   </test> 
   <test  name="ParallelTesting-Test3">
-	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.HRMS.Scripts.ProjectManagerTest"/>
     </classes>
   </test> 
   <test  name="ParallelTesting-Test4">
-	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.HRMS.Scripts.FinanceTest"/>
     </classes>

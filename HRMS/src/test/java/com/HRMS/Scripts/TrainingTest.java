@@ -24,7 +24,7 @@ public class TrainingTest extends TestBase{
 	@Test(priority=17,description="check whether the Training button is enabled",groups= {"smoke"})
 	public void verifyTrainingButtonstatus() {
 		objTraining=new TrainingPage(driver);
-		objTraining.clickTrainingButton();
+		//objTraining.clickTrainingButton();
 		boolean typeStatus_Actual=objTraining.checkTraningButtonStatus();
 		Assert.assertTrue(typeStatus_Actual);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_STATUS);
@@ -34,6 +34,7 @@ public class TrainingTest extends TestBase{
 	@Test(priority=18,description="verifying the selected training type is displayed in the list")
 	public void verifyTrainingTypeSelected() {
 		objTraining=new TrainingPage(driver);
+		objTraining.clickTrainingButton();
 		objTraining.setTrainingType(Constants.TRAININGTYPE_EXPECTED);
 		objTraining.clickSave();
 		objTraining.searchTrainingType(Constants.TRAININGTYPE_EXPECTED);

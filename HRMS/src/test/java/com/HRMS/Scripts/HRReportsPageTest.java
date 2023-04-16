@@ -18,23 +18,12 @@ public class HRReportsPageTest extends TestBase{
 	HRReportsPage objHR;
 	ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
-	  
- /*@Test(priority=28,description="verify the attendence report is listed after filtering")
-  public void verifyFilteredAttendencereport() {
-	  objHR=new HRReportsPage(driver);
-		objHR.scrollPage();
-		objHR.clickHRReports();
-	  objHR.clickAttendenceReport();
-	  objHR.selectCompany();
-	  objHR.selectEmployee();
-	  objHR.clickGet();
-	 Assert.assertTrue(objHR.checkEnteredAttendenceStatus());
-}*/
-	@Test(priority=29,description="verify the status of  selected Project Report",groups= {"smoke"})
+
+	@Test(priority=28,description="verify the status of  selected Project Report",groups= {"smoke"})
 	public void verifyProjectReportStatusisListed() {
 		objHR=new HRReportsPage(driver);
-		objHR.scrollPage();
-	     objHR.clickHRReports();
+	       objHR.scrollPage();
+	       objHR.clickHRReports();
 		objHR.checkProjectReport();
 		Assert.assertEquals(objHR.checkStatus(),Constants.STATUS_LISTED);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.STATUS_LISTED);
@@ -43,7 +32,7 @@ public class HRReportsPageTest extends TestBase{
 
 	}
 
-	@Test(priority=30,description="verify the UserRoles Report is listed")
+	@Test(priority=29,description="verify the UserRoles Report is listed")
 	public void verifyUserReportDetails() {
 		objHR=new HRReportsPage(driver);
 		objHR.clickUserRolesReport();
@@ -52,7 +41,7 @@ public class HRReportsPageTest extends TestBase{
 		extentTest.get().log(Status.PASS, ExtentLogMessage.USERROLES_REPORT_DETAILS);
 
 	}
-	@Test(priority=31,description="verify the employeeID is listed in EmployeeReport",groups= {"smoke"})
+	@Test(priority=30,description="verify the employeeID is listed in EmployeeReport",groups= {"smoke"})
 	public void verifyEmployeeIDisListed() {
 		objHR=new HRReportsPage(driver);
 		objHR.clickEmployeesReport();

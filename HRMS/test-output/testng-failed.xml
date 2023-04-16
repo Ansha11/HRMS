@@ -5,8 +5,48 @@
     <listener class-name="com.HRMS.Listeners.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="edge"/>
     <classes>
+      <class name="com.HRMS.Scripts.OrganizationTest">
+        <methods>
+          <include name="verifyDesignationAdded"/>
+          <include name="verifyAddedPersonDetails" invocation-numbers="0"/>
+          <include name="verifyLocationDetails"/>
+          <include name="verifyCompanyPolicyUpdated"/>
+          <include name="setUp"/>
+          <include name="verifyOfficialDocumentsType"/>
+          <include name="verifyAddedCompaanyPolicyTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.OrganizationTest -->
+      <class name="com.HRMS.Scripts.HRReportsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyEmployeeIDisListed"/>
+          <include name="verifyProjectReportStatusisListed"/>
+          <include name="tearDown"/>
+          <include name="verifyUserReportDetails"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.HRReportsPageTest -->
+      <class name="com.HRMS.Scripts.FinanceTest">
+        <methods>
+          <include name="verifyFixedAccountBalance"/>
+          <include name="verifyAddedAccountDetails"/>
+          <include name="verifyAddedPayeeDetails"/>
+          <include name="setUp"/>
+          <include name="verifyPayerDetails"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.FinanceTest -->
+      <class name="com.HRMS.Scripts.ProjectManagerTest">
+        <methods>
+          <include name="verifyProjectCount"/>
+          <include name="verifyTaxTypeEntered"/>
+          <include name="setUp"/>
+          <include name="verifyCountrySelection"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.ProjectManagerTest -->
       <class name="com.HRMS.Scripts.TrainingTest">
         <methods>
           <include name="verifyTrainingButtonstatus"/>
@@ -17,6 +57,25 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.HRMS.Scripts.TrainingTest -->
+      <class name="com.HRMS.Scripts.StaffTest">
+        <methods>
+          <include name="checkActiveOptionStatus"/>
+          <include name="verifyfilterButtonStatus"/>
+          <include name="verifyAddedRoleisListed"/>
+          <include name="verifyCompanyStaffRecords"/>
+          <include name="setUp"/>
+          <include name="verifyCompanySelection"/>
+          <include name="tearDown"/>
+          <include name="verifyAddedRoleisDeleted"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.StaffTest -->
+      <class name="com.HRMS.Scripts.LoginTest">
+        <methods>
+          <include name="verifyLoginValidUserValidPassword" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.HRMS.Scripts.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
