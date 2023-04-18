@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>30/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>29/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 12 11:21:56 AEST 2023</td>
+<td>Started on:</td><td>Mon Apr 17 11:28:33 AEST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>94 seconds (94168 ms)</td>
+<tr><td>Total time:</td><td>112 seconds (112589 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,104 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.HRMS.Scripts.FinanceTest.verifyAddedAccountDetails()'><b>verifyAddedAccountDetails</b><br>Test class: com.HRMS.Scripts.FinanceTest<br>Test method: verify newly added account is listed</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;account_name&apos;]&quot;}
+  (Session info: MicrosoftEdge=112.0.1722.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;192-168-1-108.tpgi.com.au&apos;, ip: &apos;fe80:0:0:0:ccb:4ff1:44c3:782e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.3&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bfeabc6c800f82ade8d077fe23566099, findElement {using=name, value=account_name}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50474}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50474/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfeabc6c800f82ade8d077fe23566099
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at com.HRMS.Pages.FinancePage.addAccountDetails(FinancePage.java:69)
+	at com.HRMS.Scripts.FinanceTest.verifyAddedAccountDetails(FinanceTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2043278873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2043278873'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;account_name&apos;]&quot;}
+  (Session info: MicrosoftEdge=112.0.1722.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;192-168-1-108.tpgi.com.au&apos;, ip: &apos;fe80:0:0:0:ccb:4ff1:44c3:782e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.3&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bfeabc6c800f82ade8d077fe23566099, findElement {using=name, value=account_name}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50474}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50474/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bfeabc6c800f82ade8d077fe23566099
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at com.HRMS.Pages.FinancePage.addAccountDetails(FinancePage.java:69)
+	at com.HRMS.Scripts.FinanceTest.verifyAddedAccountDetails(FinanceTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>com.HRMS.Scripts.FinanceTest@3fce8fd9</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,82 +173,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.HRMS.Scripts.TrainingTest.verifyTrainingTypeSelected()'><b>verifyTrainingTypeSelected</b><br>Test class: com.HRMS.Scripts.TrainingTest<br>Test method: verifying the selected training type is displayed in the list</td>
+<td title='com.HRMS.Scripts.FinanceTest.verifyPayerDetails()'><b>verifyPayerDetails</b><br>Test class: com.HRMS.Scripts.FinanceTest<br>Test method: verify the added payer details are deleted</td>
 <td></td>
-<td>2</td>
-<td>com.HRMS.Scripts.TrainingTest@72ade7e3</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.HRReportsPageTest.verifyEmployeeIDisListed()'><b>verifyEmployeeIDisListed</b><br>Test class: com.HRMS.Scripts.HRReportsPageTest<br>Test method: verify the employeeID is listed in EmployeeReport</td>
-<td></td>
-<td>2</td>
-<td>com.HRMS.Scripts.HRReportsPageTest@609bcfb6</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.OrganizationTest.verifyCompanyPolicyUpdated()'><b>verifyCompanyPolicyUpdated</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the company policy  is updated</td>
-<td></td>
-<td>2</td>
-<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.LoginTest.verifyLoginInvalidUserInvalidPassword()'><b>verifyLoginInvalidUserInvalidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with invalid username and invalid password<br>Parameters: admin123, 123</td>
-<td></td>
-<td>0</td>
-<td>com.HRMS.Scripts.LoginTest@2663e964</td></tr>
+<td>3</td>
+<td>com.HRMS.Scripts.FinanceTest@3fce8fd9</td></tr>
 <tr>
 <td title='com.HRMS.Scripts.StaffTest.verifyfilterButtonStatus()'><b>verifyfilterButtonStatus</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify filter button is enabled</td>
 <td></td>
 <td>1</td>
 <td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
 <tr>
-<td title='com.HRMS.Scripts.OrganizationTest.verifyAddedCompaanyPolicyTitle()'><b>verifyAddedCompaanyPolicyTitle</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify new company policy  is added</td>
-<td></td>
-<td>3</td>
-<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.OrganizationTest.verifyLocationDetails()'><b>verifyLocationDetails</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the entered location is listed</td>
-<td></td>
-<td>2</td>
-<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.StaffTest.verifyCompanySelection()'><b>verifyCompanySelection</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify the given  company is selected</td>
-<td></td>
-<td>2</td>
-<td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.LoginTest.verifyLoginValidUserInvalidPassword()'><b>verifyLoginValidUserInvalidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with valid username and invalid password<br>Parameters: admin, 123</td>
-<td></td>
-<td>0</td>
-<td>com.HRMS.Scripts.LoginTest@2663e964</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.HRReportsPageTest.verifyUserReportDetails()'><b>verifyUserReportDetails</b><br>Test class: com.HRMS.Scripts.HRReportsPageTest<br>Test method: verify the UserRoles Report is listed</td>
-<td></td>
-<td>2</td>
-<td>com.HRMS.Scripts.HRReportsPageTest@609bcfb6</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.FinanceTest.verifyPayerDetails()'><b>verifyPayerDetails</b><br>Test class: com.HRMS.Scripts.FinanceTest<br>Test method: verify the added payer details are deleted</td>
-<td></td>
-<td>4</td>
-<td>com.HRMS.Scripts.FinanceTest@3fce8fd9</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.OrganizationTest.verifyAddedPersonDetails()'><b>verifyAddedPersonDetails</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the  company details added person is displayed<br>Parameters: IBS, 1234, 9678990, http://demo, admin, admin123, Kochi, 689456</td>
-<td></td>
-<td>4</td>
-<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.LoginTest.verifyLoginValidUserValidPassword()'><b>verifyLoginValidUserValidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with valid username and password<br>Parameters: admin, 123456</td>
-<td></td>
-<td>9</td>
-<td>com.HRMS.Scripts.LoginTest@2663e964</td></tr>
-<tr>
 <td title='com.HRMS.Scripts.StaffTest.checkActiveOptionStatus()'><b>checkActiveOptionStatus</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify Active Option is displayed</td>
-<td></td>
-<td>1</td>
-<td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.StaffTest.verifyAddedRoleisDeleted()'><b>verifyAddedRoleisDeleted</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify the newly added role is deleted</td>
-<td></td>
-<td>1</td>
-<td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.StaffTest.verifyCompanyStaffRecords()'><b>verifyCompanyStaffRecords</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify selected company staff details</td>
 <td></td>
 <td>1</td>
 <td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
@@ -165,42 +198,37 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.HRMS.Scripts.TrainingTest@72ade7e3</td></tr>
 <tr>
-<td title='com.HRMS.Scripts.OrganizationTest.verifyDesignationAdded()'><b>verifyDesignationAdded</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the added designation is listed</td>
-<td></td>
-<td>3</td>
-<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.TrainingTest.verifyContactNumberVisibility()'><b>verifyContactNumberVisibility</b><br>Test class: com.HRMS.Scripts.TrainingTest<br>Test method: verify the given contact number is added</td>
-<td></td>
-<td>3</td>
-<td>com.HRMS.Scripts.TrainingTest@72ade7e3</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.ProjectManagerTest.verifyProjectCount()'><b>verifyProjectCount</b><br>Test class: com.HRMS.Scripts.ProjectManagerTest<br>Test method: verify the project count</td>
-<td></td>
-<td>3</td>
-<td>com.HRMS.Scripts.ProjectManagerTest@239105a8</td></tr>
-<tr>
-<td title='com.HRMS.Scripts.TrainingTest.verifyTrainingTypeUpdated()'><b>verifyTrainingTypeUpdated</b><br>Test class: com.HRMS.Scripts.TrainingTest<br>Test method: verifying the training type is updated</td>
+<td title='com.HRMS.Scripts.StaffTest.verifyAddedRoleisDeleted()'><b>verifyAddedRoleisDeleted</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify the newly added role is deleted</td>
 <td></td>
 <td>1</td>
-<td>com.HRMS.Scripts.TrainingTest@72ade7e3</td></tr>
+<td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
 <tr>
-<td title='com.HRMS.Scripts.FinanceTest.verifyAddedAccountDetails()'><b>verifyAddedAccountDetails</b><br>Test class: com.HRMS.Scripts.FinanceTest<br>Test method: verify newly added account is listed</td>
+<td title='com.HRMS.Scripts.HRReportsPageTest.verifyUserReportDetails()'><b>verifyUserReportDetails</b><br>Test class: com.HRMS.Scripts.HRReportsPageTest<br>Test method: verify the UserRoles Report is listed</td>
 <td></td>
 <td>2</td>
-<td>com.HRMS.Scripts.FinanceTest@3fce8fd9</td></tr>
+<td>com.HRMS.Scripts.HRReportsPageTest@609bcfb6</td></tr>
 <tr>
 <td title='com.HRMS.Scripts.HRReportsPageTest.verifyProjectReportStatusisListed()'><b>verifyProjectReportStatusisListed</b><br>Test class: com.HRMS.Scripts.HRReportsPageTest<br>Test method: verify the status of  selected Project Report</td>
 <td></td>
 <td>2</td>
 <td>com.HRMS.Scripts.HRReportsPageTest@609bcfb6</td></tr>
 <tr>
-<td title='com.HRMS.Scripts.FinanceTest.verifyAddedPayeeDetails()'><b>verifyAddedPayeeDetails</b><br>Test class: com.HRMS.Scripts.FinanceTest<br>Test method: verify newly added payee is listed</td>
+<td title='com.HRMS.Scripts.TrainingTest.verifyTrainingTypeSelected()'><b>verifyTrainingTypeSelected</b><br>Test class: com.HRMS.Scripts.TrainingTest<br>Test method: verifying the selected training type is displayed in the list</td>
+<td></td>
+<td>3</td>
+<td>com.HRMS.Scripts.TrainingTest@72ade7e3</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.StaffTest.verifyCompanyStaffRecords()'><b>verifyCompanyStaffRecords</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify selected company staff details</td>
 <td></td>
 <td>2</td>
-<td>com.HRMS.Scripts.FinanceTest@3fce8fd9</td></tr>
+<td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
 <tr>
-<td title='com.HRMS.Scripts.LoginTest.verifyLoginInvalidUserValidPassword()'><b>verifyLoginInvalidUserValidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with invalid username and valid password<br>Parameters: admin123, 123456</td>
+<td title='com.HRMS.Scripts.OrganizationTest.verifyLocationDetails()'><b>verifyLocationDetails</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the entered location is listed</td>
+<td></td>
+<td>3</td>
+<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.LoginTest.verifyLoginInvalidUserInvalidPassword()'><b>verifyLoginInvalidUserInvalidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with invalid username and invalid password<br>Parameters: admin123, 123</td>
 <td></td>
 <td>0</td>
 <td>com.HRMS.Scripts.LoginTest@2663e964</td></tr>
@@ -210,20 +238,85 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.HRMS.Scripts.FinanceTest@3fce8fd9</td></tr>
 <tr>
+<td title='com.HRMS.Scripts.LoginTest.verifyLoginValidUserInvalidPassword()'><b>verifyLoginValidUserInvalidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with valid username and invalid password<br>Parameters: admin, 123</td>
+<td></td>
+<td>0</td>
+<td>com.HRMS.Scripts.LoginTest@2663e964</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.StaffTest.verifyCompanySelection()'><b>verifyCompanySelection</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify the given  company is selected</td>
+<td></td>
+<td>2</td>
+<td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.OrganizationTest.verifyCompanyPolicyUpdated()'><b>verifyCompanyPolicyUpdated</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the company policy  is updated</td>
+<td></td>
+<td>3</td>
+<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.LoginTest.verifyLoginInvalidUserValidPassword()'><b>verifyLoginInvalidUserValidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with invalid username and valid password<br>Parameters: admin123, 123456</td>
+<td></td>
+<td>0</td>
+<td>com.HRMS.Scripts.LoginTest@2663e964</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.OrganizationTest.verifyOfficialDocumentsType()'><b>verifyOfficialDocumentsType</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the type of Official documents attached</td>
+<td></td>
+<td>2</td>
+<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.OrganizationTest.verifyAddedCompaanyPolicyTitle()'><b>verifyAddedCompaanyPolicyTitle</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify new company policy  is added</td>
+<td></td>
+<td>3</td>
+<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.OrganizationTest.verifyDesignationAdded()'><b>verifyDesignationAdded</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the added designation is listed</td>
+<td></td>
+<td>2</td>
+<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.OrganizationTest.verifyAddedPersonDetails()'><b>verifyAddedPersonDetails</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the  company details added person is displayed<br>Parameters: IBS, 1234, 9678990, http://demo, admin, admin123, Kochi, 689456</td>
+<td></td>
+<td>6</td>
+<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.LoginTest.verifyLoginValidUserValidPassword()'><b>verifyLoginValidUserValidPassword</b><br>Test class: com.HRMS.Scripts.LoginTest<br>Test method: Verifying LoginPage with valid username and password<br>Parameters: admin, 123456</td>
+<td></td>
+<td>10</td>
+<td>com.HRMS.Scripts.LoginTest@2663e964</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.HRReportsPageTest.verifyEmployeeIDisListed()'><b>verifyEmployeeIDisListed</b><br>Test class: com.HRMS.Scripts.HRReportsPageTest<br>Test method: verify the employeeID is listed in EmployeeReport</td>
+<td></td>
+<td>2</td>
+<td>com.HRMS.Scripts.HRReportsPageTest@609bcfb6</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.ProjectManagerTest.verifyProjectCount()'><b>verifyProjectCount</b><br>Test class: com.HRMS.Scripts.ProjectManagerTest<br>Test method: verify the project count</td>
+<td></td>
+<td>3</td>
+<td>com.HRMS.Scripts.ProjectManagerTest@239105a8</td></tr>
+<tr>
 <td title='com.HRMS.Scripts.StaffTest.verifyAddedRoleisListed()'><b>verifyAddedRoleisListed</b><br>Test class: com.HRMS.Scripts.StaffTest<br>Test method: Verify the coreHR checkbox is not selected and added role is listed</td>
 <td></td>
 <td>8</td>
 <td>com.HRMS.Scripts.StaffTest@51a9ad5e</td></tr>
 <tr>
-<td title='com.HRMS.Scripts.OrganizationTest.verifyOfficialDocumentsType()'><b>verifyOfficialDocumentsType</b><br>Test class: com.HRMS.Scripts.OrganizationTest<br>Test method: verify the type of Official documents attached</td>
+<td title='com.HRMS.Scripts.FinanceTest.verifyAddedPayeeDetails()'><b>verifyAddedPayeeDetails</b><br>Test class: com.HRMS.Scripts.FinanceTest<br>Test method: verify newly added payee is listed</td>
 <td></td>
 <td>3</td>
-<td>com.HRMS.Scripts.OrganizationTest@5f20155b</td></tr>
+<td>com.HRMS.Scripts.FinanceTest@3fce8fd9</td></tr>
 <tr>
 <td title='com.HRMS.Scripts.ProjectManagerTest.verifyTaxTypeEntered()'><b>verifyTaxTypeEntered</b><br>Test class: com.HRMS.Scripts.ProjectManagerTest<br>Test method: verify the added tax type</td>
 <td></td>
-<td>2</td>
+<td>3</td>
 <td>com.HRMS.Scripts.ProjectManagerTest@239105a8</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.TrainingTest.verifyContactNumberVisibility()'><b>verifyContactNumberVisibility</b><br>Test class: com.HRMS.Scripts.TrainingTest<br>Test method: verify the given contact number is added</td>
+<td></td>
+<td>4</td>
+<td>com.HRMS.Scripts.TrainingTest@72ade7e3</td></tr>
+<tr>
+<td title='com.HRMS.Scripts.TrainingTest.verifyTrainingTypeUpdated()'><b>verifyTrainingTypeUpdated</b><br>Test class: com.HRMS.Scripts.TrainingTest<br>Test method: verifying the training type is updated</td>
+<td></td>
+<td>1</td>
+<td>com.HRMS.Scripts.TrainingTest@72ade7e3</td></tr>
 </table><p>
 </body>
 </html>

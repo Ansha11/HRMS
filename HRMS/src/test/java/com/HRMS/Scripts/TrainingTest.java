@@ -24,7 +24,6 @@ public class TrainingTest extends TestBase{
 	@Test(priority=17,description="check whether the Training button is enabled",groups= {"smoke"})
 	public void verifyTrainingButtonstatus() {
 		objTraining=new TrainingPage(driver);
-		//objTraining.clickTrainingButton();
 		boolean typeStatus_Actual=objTraining.checkTraningButtonStatus();
 		Assert.assertTrue(typeStatus_Actual);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.TRAINING_STATUS);

@@ -8,10 +8,9 @@
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.HRMS.Scripts.StaffTest"/>
-            <class name="com.HRMS.Scripts.OrganizationTest"/>
+       <class name="com.HRMS.Scripts.OrganizationTest"/>
       <class name="com.HRMS.Scripts.ProjectManagerTest"/>
-
-            <class name="com.HRMS.Scripts.FinanceTest"/>
+      <class name="com.HRMS.Scripts.FinanceTest"/>
 
     </classes>
   </test> <!-- Test -->
