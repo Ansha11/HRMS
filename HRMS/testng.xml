@@ -15,7 +15,6 @@
 		       <class name="com.HRMS.Scripts.FinanceTest"/>
 		       <class name="com.HRMS.Scripts.HRReportsPageTest"/>
 
-
 </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

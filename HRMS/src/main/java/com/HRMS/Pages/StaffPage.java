@@ -16,7 +16,6 @@ public class StaffPage {
 
 	@FindBy(xpath="//span[text()='Staff']")
 	private WebElement staff;
-
 	@FindBy(xpath="//a[text()=' Roles & Privileges']")
 	private WebElement roles;
 	@FindBy(xpath="//button[text()=' Add New']")

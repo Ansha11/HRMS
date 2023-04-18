@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.HRMS.Constants.Constants;
 import com.HRMS.Utilities.PageUtilities;
+import com.HRMS.Utilities.WaitUtilities;
 
 public class TrainingPage {
 	public WebDriver driver;
@@ -54,6 +55,7 @@ public class TrainingPage {
 	}
 
 	public void clickTrainingButton() {
+		WaitUtilities.fluentWait(driver, training);
 		training.click();
 	}
 	public boolean checkTraningButtonStatus() {

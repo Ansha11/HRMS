@@ -54,6 +54,13 @@ public class TestBase {
 			e.printStackTrace();
 		}
 	}
+	@AfterMethod
+	public void afterMethod(ITestResult r) throws IOException {
+		if(ITestResult.SUCCESS==r.getStatus()) {
+			File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(f, new File("/Users/Sanoob/Desktop/screenshot/\"+r.getName()+\".jpeg"));
+		}
+	}
 
 
 	@BeforeTest(groups = {"smoke"})
