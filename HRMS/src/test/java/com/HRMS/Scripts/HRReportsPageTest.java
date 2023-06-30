@@ -1,5 +1,7 @@
 package com.HRMS.Scripts;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.Assert;
@@ -25,7 +27,7 @@ public class HRReportsPageTest extends TestBase{
 	       objHR.scrollPage();
 	       objHR.clickHRReports();
 		objHR.checkProjectReport();
-		Assert.assertEquals(objHR.checkStatus(),Constants.STATUS_LISTED);
+		AssertJUnit.assertEquals(objHR.checkStatus(),Constants.STATUS_LISTED);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.STATUS_LISTED);
 		extentTest.get().assignCategory("smoke");
 
@@ -37,7 +39,7 @@ public class HRReportsPageTest extends TestBase{
 		objHR=new HRReportsPage(driver);
 		objHR.clickUserRolesReport();
 		objHR.selectRoles();
-		Assert.assertTrue(objHR.checkReportisDisplayed());
+		AssertJUnit.assertTrue(objHR.checkReportisDisplayed());
 		extentTest.get().log(Status.PASS, ExtentLogMessage.USERROLES_REPORT_DETAILS);
 
 	}
@@ -46,7 +48,7 @@ public class HRReportsPageTest extends TestBase{
 		objHR=new HRReportsPage(driver);
 		objHR.clickEmployeesReport();
 		objHR.searchEmployeeName();
-		Assert.assertEquals(objHR.checkEmployeeID(),Constants.EMPLOYEE_ID);
+		AssertJUnit.assertEquals(objHR.checkEmployeeID(),Constants.EMPLOYEE_ID);
 		extentTest.get().log(Status.PASS, ExtentLogMessage.EMPLOYEEID_MESSAGE);
 		extentTest.get().assignCategory("smoke");
 

@@ -2,49 +2,49 @@
 <testng-results ignored="12" total="42" passed="29" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-17T11:28:33 AEST" name="Suite" finished-at="2023-04-17T11:30:26 AEST" duration-ms="112589">
+  <suite started-at="2023-04-18T10:54:50 AEST" name="Suite" finished-at="2023-04-18T10:56:39 AEST" duration-ms="109158">
     <groups>
       <group name="regression">
-        <method signature="OrganizationTest.verifyAddedPersonDetails(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:11, instance:com.HRMS.Scripts.OrganizationTest@5f20155b]" name="verifyAddedPersonDetails" class="com.HRMS.Scripts.OrganizationTest"/>
-        <method signature="ProjectManagerTest.verifyProjectCount()[pri:21, instance:com.HRMS.Scripts.ProjectManagerTest@239105a8]" name="verifyProjectCount" class="com.HRMS.Scripts.ProjectManagerTest"/>
-        <method signature="ProjectManagerTest.verifyTaxTypeEntered()[pri:23, instance:com.HRMS.Scripts.ProjectManagerTest@239105a8]" name="verifyTaxTypeEntered" class="com.HRMS.Scripts.ProjectManagerTest"/>
-        <method signature="StaffTest.verifyAddedRoleisDeleted()[pri:6, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" name="verifyAddedRoleisDeleted" class="com.HRMS.Scripts.StaffTest"/>
-        <method signature="StaffTest.verifyAddedRoleisListed()[pri:5, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" name="verifyAddedRoleisListed" class="com.HRMS.Scripts.StaffTest"/>
+        <method signature="OrganizationTest.verifyAddedPersonDetails(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:11, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" name="verifyAddedPersonDetails" class="com.HRMS.Scripts.OrganizationTest"/>
+        <method signature="ProjectManagerTest.verifyProjectCount()[pri:21, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" name="verifyProjectCount" class="com.HRMS.Scripts.ProjectManagerTest"/>
+        <method signature="ProjectManagerTest.verifyTaxTypeEntered()[pri:23, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" name="verifyTaxTypeEntered" class="com.HRMS.Scripts.ProjectManagerTest"/>
+        <method signature="StaffTest.verifyAddedRoleisDeleted()[pri:6, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" name="verifyAddedRoleisDeleted" class="com.HRMS.Scripts.StaffTest"/>
+        <method signature="StaffTest.verifyAddedRoleisListed()[pri:5, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" name="verifyAddedRoleisListed" class="com.HRMS.Scripts.StaffTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="FinanceTest.verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@3fce8fd9]" name="verifyAddedAccountDetails" class="com.HRMS.Scripts.FinanceTest"/>
-        <method signature="FinanceTest.verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@3fce8fd9]" name="verifyFixedAccountBalance" class="com.HRMS.Scripts.FinanceTest"/>
-        <method signature="HRReportsPageTest.verifyEmployeeIDisListed()[pri:30, instance:com.HRMS.Scripts.HRReportsPageTest@609bcfb6]" name="verifyEmployeeIDisListed" class="com.HRMS.Scripts.HRReportsPageTest"/>
-        <method signature="HRReportsPageTest.verifyProjectReportStatusisListed()[pri:28, instance:com.HRMS.Scripts.HRReportsPageTest@609bcfb6]" name="verifyProjectReportStatusisListed" class="com.HRMS.Scripts.HRReportsPageTest"/>
-        <method signature="LoginTest.verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@2663e964]" name="verifyLoginValidUserValidPassword" class="com.HRMS.Scripts.LoginTest"/>
-        <method signature="TrainingTest.verifyTrainingButtonstatus()[pri:17, instance:com.HRMS.Scripts.TrainingTest@72ade7e3]" name="verifyTrainingButtonstatus" class="com.HRMS.Scripts.TrainingTest"/>
+        <method signature="FinanceTest.verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@23202fce]" name="verifyAddedAccountDetails" class="com.HRMS.Scripts.FinanceTest"/>
+        <method signature="FinanceTest.verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@23202fce]" name="verifyFixedAccountBalance" class="com.HRMS.Scripts.FinanceTest"/>
+        <method signature="HRReportsPageTest.verifyEmployeeIDisListed()[pri:30, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" name="verifyEmployeeIDisListed" class="com.HRMS.Scripts.HRReportsPageTest"/>
+        <method signature="HRReportsPageTest.verifyProjectReportStatusisListed()[pri:28, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" name="verifyProjectReportStatusisListed" class="com.HRMS.Scripts.HRReportsPageTest"/>
+        <method signature="LoginTest.verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@39b43d60]" name="verifyLoginValidUserValidPassword" class="com.HRMS.Scripts.LoginTest"/>
+        <method signature="TrainingTest.verifyTrainingButtonstatus()[pri:17, instance:com.HRMS.Scripts.TrainingTest@560348e6]" name="verifyTrainingButtonstatus" class="com.HRMS.Scripts.TrainingTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-04-17T11:28:33 AEST" name="Test" finished-at="2023-04-17T11:30:26 AEST" duration-ms="112589">
+    <test started-at="2023-04-18T10:54:50 AEST" name="Test" finished-at="2023-04-18T10:56:39 AEST" duration-ms="109158">
       <class name="com.HRMS.Scripts.FinanceTest">
-        <test-method signature="verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@3fce8fd9]" started-at="2023-04-17T11:29:59 AEST" name="verifyAddedAccountDetails" description="verify newly added account is listed" finished-at="2023-04-17T11:30:11 AEST" duration-ms="11635" status="FAIL">
+        <test-method signature="verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:14 AEST" name="verifyAddedAccountDetails" description="verify newly added account is listed" finished-at="2023-04-18T10:56:26 AEST" duration-ms="12087" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='account_name']"}
-  (Session info: MicrosoftEdge=112.0.1722.46)
+  (Session info: MicrosoftEdge=112.0.1722.48)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:ccb:4ff1:44c3:782e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bfeabc6c800f82ade8d077fe23566099, findElement {using=name, value=account_name}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50474}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50474/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bfeabc6c800f82ade8d077fe23566099]]>
+Command: [cf44580ea565ff22462573c4c106b039, findElement {using=name, value=account_name}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.48, ms:edgeOptions: {debuggerAddress: localhost:52978}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52978/devtoo..., se:cdpVersion: 112.0.1722.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf44580ea565ff22462573c4c106b039]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='account_name']"}
-  (Session info: MicrosoftEdge=112.0.1722.46)
+  (Session info: MicrosoftEdge=112.0.1722.48)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:ccb:4ff1:44c3:782e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bfeabc6c800f82ade8d077fe23566099, findElement {using=name, value=account_name}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.46, ms:edgeOptions: {debuggerAddress: localhost:50474}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50474/devtoo..., se:cdpVersion: 112.0.1722.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bfeabc6c800f82ade8d077fe23566099
+Command: [cf44580ea565ff22462573c4c106b039, findElement {using=name, value=account_name}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.48, ms:edgeOptions: {debuggerAddress: localhost:52978}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52978/devtoo..., se:cdpVersion: 112.0.1722.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf44580ea565ff22462573c4c106b039
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -63,7 +63,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
 at com.HRMS.Pages.FinancePage.addAccountDetails(FinancePage.java:69)
 at com.HRMS.Scripts.FinanceTest.verifyAddedAccountDetails(FinanceTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -100,47 +100,157 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedAccountDetails -->
-        <test-method signature="verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@3fce8fd9]" started-at="2023-04-17T11:30:11 AEST" name="verifyFixedAccountBalance" description="verify the  account balance is listed" finished-at="2023-04-17T11:30:11 AEST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:26 AEST" name="afterMethod" finished-at="2023-04-18T10:56:26 AEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedAccountDetails status=FAILURE method=FinanceTest.verifyAddedAccountDetails()[pri:24, instance:com.HRMS.Scripts.FinanceTest@23202fce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:26 AEST" name="verifyFixedAccountBalance" description="verify the  account balance is listed" finished-at="2023-04-18T10:56:26 AEST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFixedAccountBalance -->
-        <test-method signature="verifyAddedPayeeDetails()[pri:26, instance:com.HRMS.Scripts.FinanceTest@3fce8fd9]" started-at="2023-04-17T11:30:11 AEST" name="verifyAddedPayeeDetails" description="verify newly added payee is listed" finished-at="2023-04-17T11:30:14 AEST" duration-ms="3631" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:26 AEST" name="afterMethod" finished-at="2023-04-18T10:56:26 AEST" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFixedAccountBalance status=SUCCESS method=FinanceTest.verifyFixedAccountBalance()[pri:25, instance:com.HRMS.Scripts.FinanceTest@23202fce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyAddedPayeeDetails()[pri:26, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:26 AEST" name="verifyAddedPayeeDetails" description="verify newly added payee is listed" finished-at="2023-04-18T10:56:29 AEST" duration-ms="2639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedPayeeDetails -->
-        <test-method signature="verifyPayerDetails()[pri:27, instance:com.HRMS.Scripts.FinanceTest@3fce8fd9]" started-at="2023-04-17T11:30:14 AEST" name="verifyPayerDetails" description="verify the added payer details are deleted" finished-at="2023-04-17T11:30:17 AEST" duration-ms="3034" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:29 AEST" name="afterMethod" finished-at="2023-04-18T10:56:29 AEST" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedPayeeDetails status=SUCCESS method=FinanceTest.verifyAddedPayeeDetails()[pri:26, instance:com.HRMS.Scripts.FinanceTest@23202fce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyPayerDetails()[pri:27, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:29 AEST" name="verifyPayerDetails" description="verify the added payer details are deleted" finished-at="2023-04-18T10:56:33 AEST" duration-ms="3563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPayerDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.FinanceTest@23202fce]" started-at="2023-04-18T10:56:33 AEST" name="afterMethod" finished-at="2023-04-18T10:56:33 AEST" duration-ms="230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPayerDetails status=SUCCESS method=FinanceTest.verifyPayerDetails()[pri:27, instance:com.HRMS.Scripts.FinanceTest@23202fce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.HRMS.Scripts.FinanceTest -->
       <class name="com.HRMS.Scripts.StaffTest">
-        <test-method signature="verifyAddedRoleisListed()[pri:5, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" started-at="2023-04-17T11:28:58 AEST" name="verifyAddedRoleisListed" description="Verify the coreHR checkbox is not selected and added role is listed" finished-at="2023-04-17T11:29:07 AEST" duration-ms="8713" status="PASS">
+        <test-method signature="verifyAddedRoleisListed()[pri:5, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:14 AEST" name="verifyAddedRoleisListed" description="Verify the coreHR checkbox is not selected and added role is listed" finished-at="2023-04-18T10:55:22 AEST" duration-ms="7880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedRoleisListed -->
-        <test-method signature="verifyAddedRoleisDeleted()[pri:6, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" started-at="2023-04-17T11:29:07 AEST" name="verifyAddedRoleisDeleted" description="Verify the newly added role is deleted" finished-at="2023-04-17T11:29:09 AEST" duration-ms="1641" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:22 AEST" name="afterMethod" finished-at="2023-04-18T10:55:22 AEST" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedRoleisListed status=SUCCESS method=StaffTest.verifyAddedRoleisListed()[pri:5, instance:com.HRMS.Scripts.StaffTest@609bcfb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyAddedRoleisDeleted()[pri:6, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:22 AEST" name="verifyAddedRoleisDeleted" description="Verify the newly added role is deleted" finished-at="2023-04-18T10:55:23 AEST" duration-ms="1551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedRoleisDeleted -->
-        <test-method signature="verifyCompanySelection()[pri:7, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" started-at="2023-04-17T11:29:09 AEST" name="verifyCompanySelection" description="Verify the given  company is selected" finished-at="2023-04-17T11:29:11 AEST" duration-ms="2103" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:23 AEST" name="afterMethod" finished-at="2023-04-18T10:55:24 AEST" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedRoleisDeleted status=SUCCESS method=StaffTest.verifyAddedRoleisDeleted()[pri:6, instance:com.HRMS.Scripts.StaffTest@609bcfb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyCompanySelection()[pri:7, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:24 AEST" name="verifyCompanySelection" description="Verify the given  company is selected" finished-at="2023-04-18T10:55:26 AEST" duration-ms="2432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompanySelection -->
-        <test-method signature="verifyCompanyStaffRecords()[pri:8, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" started-at="2023-04-17T11:29:11 AEST" name="verifyCompanyStaffRecords" description="Verify selected company staff details" finished-at="2023-04-17T11:29:13 AEST" duration-ms="2041" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:26 AEST" name="afterMethod" finished-at="2023-04-18T10:55:26 AEST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCompanySelection status=SUCCESS method=StaffTest.verifyCompanySelection()[pri:7, instance:com.HRMS.Scripts.StaffTest@609bcfb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyCompanyStaffRecords()[pri:8, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:26 AEST" name="verifyCompanyStaffRecords" description="Verify selected company staff details" finished-at="2023-04-18T10:55:28 AEST" duration-ms="1885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompanyStaffRecords -->
-        <test-method signature="verifyfilterButtonStatus()[pri:9, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" started-at="2023-04-17T11:29:13 AEST" name="verifyfilterButtonStatus" description="Verify filter button is enabled" finished-at="2023-04-17T11:29:15 AEST" duration-ms="1908" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:28 AEST" name="afterMethod" finished-at="2023-04-18T10:55:28 AEST" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCompanyStaffRecords status=SUCCESS method=StaffTest.verifyCompanyStaffRecords()[pri:8, instance:com.HRMS.Scripts.StaffTest@609bcfb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyfilterButtonStatus()[pri:9, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:28 AEST" name="verifyfilterButtonStatus" description="Verify filter button is enabled" finished-at="2023-04-18T10:55:31 AEST" duration-ms="2274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyfilterButtonStatus -->
-        <test-method signature="checkActiveOptionStatus()[pri:10, instance:com.HRMS.Scripts.StaffTest@51a9ad5e]" started-at="2023-04-17T11:29:15 AEST" name="checkActiveOptionStatus" description="Verify Active Option is displayed" finished-at="2023-04-17T11:29:16 AEST" duration-ms="1060" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:31 AEST" name="afterMethod" finished-at="2023-04-18T10:55:31 AEST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyfilterButtonStatus status=SUCCESS method=StaffTest.verifyfilterButtonStatus()[pri:9, instance:com.HRMS.Scripts.StaffTest@609bcfb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="checkActiveOptionStatus()[pri:10, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:31 AEST" name="checkActiveOptionStatus" description="Verify Active Option is displayed" finished-at="2023-04-18T10:55:32 AEST" duration-ms="1126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkActiveOptionStatus -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.StaffTest@609bcfb6]" started-at="2023-04-18T10:55:32 AEST" name="afterMethod" finished-at="2023-04-18T10:55:32 AEST" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkActiveOptionStatus status=SUCCESS method=StaffTest.checkActiveOptionStatus()[pri:10, instance:com.HRMS.Scripts.StaffTest@609bcfb6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.HRMS.Scripts.StaffTest -->
       <class name="com.HRMS.Scripts.OrganizationTest">
-        <test-method signature="verifyAddedPersonDetails(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:11, instance:com.HRMS.Scripts.OrganizationTest@5f20155b]" started-at="2023-04-17T11:29:16 AEST" name="verifyAddedPersonDetails" description="verify the  company details added person is displayed" data-provider="CompanyType" finished-at="2023-04-17T11:29:23 AEST" duration-ms="6758" status="PASS">
+        <test-method signature="verifyAddedPersonDetails(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:11, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:32 AEST" name="verifyAddedPersonDetails" description="verify the  company details added person is displayed" data-provider="CompanyType" finished-at="2023-04-18T10:55:37 AEST" duration-ms="4860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,29 +296,95 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedPersonDetails -->
-        <test-method signature="verifyOfficialDocumentsType()[pri:12, instance:com.HRMS.Scripts.OrganizationTest@5f20155b]" started-at="2023-04-17T11:29:23 AEST" name="verifyOfficialDocumentsType" description="verify the type of Official documents attached" finished-at="2023-04-17T11:29:26 AEST" duration-ms="2484" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:37 AEST" name="afterMethod" finished-at="2023-04-18T10:55:38 AEST" duration-ms="222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedPersonDetails status=SUCCESS method=OrganizationTest.verifyAddedPersonDetails(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:11, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyOfficialDocumentsType()[pri:12, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:38 AEST" name="verifyOfficialDocumentsType" description="verify the type of Official documents attached" finished-at="2023-04-18T10:55:40 AEST" duration-ms="2348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOfficialDocumentsType -->
-        <test-method signature="verifyLocationDetails()[pri:13, instance:com.HRMS.Scripts.OrganizationTest@5f20155b]" started-at="2023-04-17T11:29:26 AEST" name="verifyLocationDetails" description="verify the entered location is listed" finished-at="2023-04-17T11:29:29 AEST" duration-ms="3669" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:40 AEST" name="afterMethod" finished-at="2023-04-18T10:55:40 AEST" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOfficialDocumentsType status=SUCCESS method=OrganizationTest.verifyOfficialDocumentsType()[pri:12, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyLocationDetails()[pri:13, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:40 AEST" name="verifyLocationDetails" description="verify the entered location is listed" finished-at="2023-04-18T10:55:43 AEST" duration-ms="2559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLocationDetails -->
-        <test-method signature="verifyDesignationAdded()[pri:14, instance:com.HRMS.Scripts.OrganizationTest@5f20155b]" started-at="2023-04-17T11:29:29 AEST" name="verifyDesignationAdded" description="verify the added designation is listed" finished-at="2023-04-17T11:29:32 AEST" duration-ms="2286" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:43 AEST" name="afterMethod" finished-at="2023-04-18T10:55:43 AEST" duration-ms="293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLocationDetails status=SUCCESS method=OrganizationTest.verifyLocationDetails()[pri:13, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyDesignationAdded()[pri:14, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:43 AEST" name="verifyDesignationAdded" description="verify the added designation is listed" finished-at="2023-04-18T10:55:46 AEST" duration-ms="3121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDesignationAdded -->
-        <test-method signature="verifyAddedCompaanyPolicyTitle()[pri:15, instance:com.HRMS.Scripts.OrganizationTest@5f20155b]" started-at="2023-04-17T11:29:32 AEST" name="verifyAddedCompaanyPolicyTitle" description="verify new company policy  is added" finished-at="2023-04-17T11:29:35 AEST" duration-ms="3460" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:46 AEST" name="afterMethod" finished-at="2023-04-18T10:55:46 AEST" duration-ms="185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDesignationAdded status=SUCCESS method=OrganizationTest.verifyDesignationAdded()[pri:14, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyAddedCompaanyPolicyTitle()[pri:15, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:46 AEST" name="verifyAddedCompaanyPolicyTitle" description="verify new company policy  is added" finished-at="2023-04-18T10:55:49 AEST" duration-ms="2647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedCompaanyPolicyTitle -->
-        <test-method signature="verifyCompanyPolicyUpdated()[pri:16, instance:com.HRMS.Scripts.OrganizationTest@5f20155b]" started-at="2023-04-17T11:29:35 AEST" name="verifyCompanyPolicyUpdated" description="verify the company policy  is updated" finished-at="2023-04-17T11:29:38 AEST" duration-ms="3036" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:49 AEST" name="afterMethod" finished-at="2023-04-18T10:55:49 AEST" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddedCompaanyPolicyTitle status=SUCCESS method=OrganizationTest.verifyAddedCompaanyPolicyTitle()[pri:15, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyCompanyPolicyUpdated()[pri:16, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:49 AEST" name="verifyCompanyPolicyUpdated" description="verify the company policy  is updated" finished-at="2023-04-18T10:55:52 AEST" duration-ms="3063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompanyPolicyUpdated -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9]" started-at="2023-04-18T10:55:52 AEST" name="afterMethod" finished-at="2023-04-18T10:55:53 AEST" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCompanyPolicyUpdated status=SUCCESS method=OrganizationTest.verifyCompanyPolicyUpdated()[pri:16, instance:com.HRMS.Scripts.OrganizationTest@7d94beb9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.HRMS.Scripts.OrganizationTest -->
       <class name="com.HRMS.Scripts.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.HRMS.Scripts.LoginTest@2663e964]" started-at="2023-04-17T11:28:33 AEST" name="setUp" finished-at="2023-04-17T11:28:43 AEST" duration-ms="9997" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:54:50 AEST" name="setUp" finished-at="2023-04-18T10:54:58 AEST" duration-ms="8369" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -219,7 +395,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginValidUserInvalidPassword(java.lang.String,int)[pri:1, instance:com.HRMS.Scripts.LoginTest@2663e964]" started-at="2023-04-17T11:28:45 AEST" name="verifyLoginValidUserInvalidPassword" description="Verifying LoginPage with valid username and invalid password" data-provider="ValidUserInvalidPassword" finished-at="2023-04-17T11:28:45 AEST" duration-ms="544" status="PASS">
+        <test-method signature="verifyLoginValidUserInvalidPassword(java.lang.String,int)[pri:1, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:00 AEST" name="verifyLoginValidUserInvalidPassword" description="Verifying LoginPage with valid username and invalid password" data-provider="ValidUserInvalidPassword" finished-at="2023-04-18T10:55:00 AEST" duration-ms="465" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -235,7 +411,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserInvalidPassword -->
-        <test-method signature="verifyLoginInvalidUserValidPassword(java.lang.String,int)[pri:2, instance:com.HRMS.Scripts.LoginTest@2663e964]" started-at="2023-04-17T11:28:46 AEST" name="verifyLoginInvalidUserValidPassword" description="Verifying LoginPage with invalid username and valid password" data-provider="InvalidUserValidPassword" finished-at="2023-04-17T11:28:46 AEST" duration-ms="791" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:00 AEST" name="afterMethod" finished-at="2023-04-18T10:55:01 AEST" duration-ms="1084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginValidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserInvalidPassword(java.lang.String,int)[pri:1, instance:com.HRMS.Scripts.LoginTest@39b43d60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyLoginInvalidUserValidPassword(java.lang.String,int)[pri:2, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:01 AEST" name="verifyLoginInvalidUserValidPassword" description="Verifying LoginPage with invalid username and valid password" data-provider="InvalidUserValidPassword" finished-at="2023-04-18T10:55:02 AEST" duration-ms="830" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -251,7 +438,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginInvalidUserValidPassword -->
-        <test-method signature="verifyLoginInvalidUserInvalidPassword(java.lang.String,int)[pri:3, instance:com.HRMS.Scripts.LoginTest@2663e964]" started-at="2023-04-17T11:28:46 AEST" name="verifyLoginInvalidUserInvalidPassword" description="Verifying LoginPage with invalid username and invalid password" data-provider="InvalidUserInvalidPassword" finished-at="2023-04-17T11:28:47 AEST" duration-ms="916" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:02 AEST" name="afterMethod" finished-at="2023-04-18T10:55:03 AEST" duration-ms="645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserValidPassword(java.lang.String,int)[pri:2, instance:com.HRMS.Scripts.LoginTest@39b43d60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyLoginInvalidUserInvalidPassword(java.lang.String,int)[pri:3, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:03 AEST" name="verifyLoginInvalidUserInvalidPassword" description="Verifying LoginPage with invalid username and invalid password" data-provider="InvalidUserInvalidPassword" finished-at="2023-04-18T10:55:04 AEST" duration-ms="526" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -267,7 +465,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
-        <test-method signature="verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@2663e964]" started-at="2023-04-17T11:28:48 AEST" name="verifyLoginValidUserValidPassword" description="Verifying LoginPage with valid username and password" data-provider="ValidUserValidPassword" finished-at="2023-04-17T11:28:58 AEST" duration-ms="10868" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:04 AEST" name="afterMethod" finished-at="2023-04-18T10:55:04 AEST" duration-ms="609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserInvalidPassword(java.lang.String,int)[pri:3, instance:com.HRMS.Scripts.LoginTest@39b43d60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:04 AEST" name="verifyLoginValidUserValidPassword" description="Verifying LoginPage with valid username and password" data-provider="ValidUserValidPassword" finished-at="2023-04-18T10:55:13 AEST" duration-ms="8927" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -283,56 +492,177 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.HRMS.Scripts.LoginTest@2663e964]" started-at="2023-04-17T11:30:26 AEST" name="tearDown" finished-at="2023-04-17T11:30:26 AEST" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:55:13 AEST" name="afterMethod" finished-at="2023-04-18T10:55:14 AEST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserValidPassword(java.lang.String,int)[pri:4, instance:com.HRMS.Scripts.LoginTest@39b43d60] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.HRMS.Scripts.LoginTest@39b43d60]" started-at="2023-04-18T10:56:39 AEST" name="tearDown" finished-at="2023-04-18T10:56:39 AEST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.HRMS.Scripts.LoginTest -->
       <class name="com.HRMS.Scripts.HRReportsPageTest">
-        <test-method signature="verifyProjectReportStatusisListed()[pri:28, instance:com.HRMS.Scripts.HRReportsPageTest@609bcfb6]" started-at="2023-04-17T11:30:17 AEST" name="verifyProjectReportStatusisListed" description="verify the status of  selected Project Report" finished-at="2023-04-17T11:30:20 AEST" duration-ms="2794" status="PASS">
+        <test-method signature="verifyProjectReportStatusisListed()[pri:28, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" started-at="2023-04-18T10:56:33 AEST" name="verifyProjectReportStatusisListed" description="verify the status of  selected Project Report" finished-at="2023-04-18T10:56:35 AEST" duration-ms="1881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProjectReportStatusisListed -->
-        <test-method signature="verifyUserReportDetails()[pri:29, instance:com.HRMS.Scripts.HRReportsPageTest@609bcfb6]" started-at="2023-04-17T11:30:20 AEST" name="verifyUserReportDetails" description="verify the UserRoles Report is listed" finished-at="2023-04-17T11:30:23 AEST" duration-ms="2539" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" started-at="2023-04-18T10:56:35 AEST" name="afterMethod" finished-at="2023-04-18T10:56:35 AEST" duration-ms="229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProjectReportStatusisListed status=SUCCESS method=HRReportsPageTest.verifyProjectReportStatusisListed()[pri:28, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyUserReportDetails()[pri:29, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" started-at="2023-04-18T10:56:35 AEST" name="verifyUserReportDetails" description="verify the UserRoles Report is listed" finished-at="2023-04-18T10:56:37 AEST" duration-ms="1616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserReportDetails -->
-        <test-method signature="verifyEmployeeIDisListed()[pri:30, instance:com.HRMS.Scripts.HRReportsPageTest@609bcfb6]" started-at="2023-04-17T11:30:23 AEST" name="verifyEmployeeIDisListed" description="verify the employeeID is listed in EmployeeReport" finished-at="2023-04-17T11:30:26 AEST" duration-ms="2843" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" started-at="2023-04-18T10:56:37 AEST" name="afterMethod" finished-at="2023-04-18T10:56:37 AEST" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserReportDetails status=SUCCESS method=HRReportsPageTest.verifyUserReportDetails()[pri:29, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyEmployeeIDisListed()[pri:30, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" started-at="2023-04-18T10:56:37 AEST" name="verifyEmployeeIDisListed" description="verify the employeeID is listed in EmployeeReport" finished-at="2023-04-18T10:56:39 AEST" duration-ms="1737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeIDisListed -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65]" started-at="2023-04-18T10:56:39 AEST" name="afterMethod" finished-at="2023-04-18T10:56:39 AEST" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEmployeeIDisListed status=SUCCESS method=HRReportsPageTest.verifyEmployeeIDisListed()[pri:30, instance:com.HRMS.Scripts.HRReportsPageTest@7b993c65] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.HRMS.Scripts.HRReportsPageTest -->
       <class name="com.HRMS.Scripts.TrainingTest">
-        <test-method signature="verifyTrainingButtonstatus()[pri:17, instance:com.HRMS.Scripts.TrainingTest@72ade7e3]" started-at="2023-04-17T11:29:38 AEST" name="verifyTrainingButtonstatus" description="check whether the Training button is enabled" finished-at="2023-04-17T11:29:38 AEST" duration-ms="93" status="PASS">
+        <test-method signature="verifyTrainingButtonstatus()[pri:17, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:55:53 AEST" name="verifyTrainingButtonstatus" description="check whether the Training button is enabled" finished-at="2023-04-18T10:55:53 AEST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTrainingButtonstatus -->
-        <test-method signature="verifyTrainingTypeSelected()[pri:18, instance:com.HRMS.Scripts.TrainingTest@72ade7e3]" started-at="2023-04-17T11:29:38 AEST" name="verifyTrainingTypeSelected" description="verifying the selected training type is displayed in the list" finished-at="2023-04-17T11:29:42 AEST" duration-ms="3655" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:55:53 AEST" name="afterMethod" finished-at="2023-04-18T10:55:53 AEST" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTrainingButtonstatus status=SUCCESS method=TrainingTest.verifyTrainingButtonstatus()[pri:17, instance:com.HRMS.Scripts.TrainingTest@560348e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyTrainingTypeSelected()[pri:18, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:55:53 AEST" name="verifyTrainingTypeSelected" description="verifying the selected training type is displayed in the list" finished-at="2023-04-18T10:55:56 AEST" duration-ms="2722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTrainingTypeSelected -->
-        <test-method signature="verifyTrainingTypeUpdated()[pri:19, instance:com.HRMS.Scripts.TrainingTest@72ade7e3]" started-at="2023-04-17T11:29:42 AEST" name="verifyTrainingTypeUpdated" description="verifying the training type is updated" finished-at="2023-04-17T11:29:44 AEST" duration-ms="1641" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:55:56 AEST" name="afterMethod" finished-at="2023-04-18T10:55:56 AEST" duration-ms="230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTrainingTypeSelected status=SUCCESS method=TrainingTest.verifyTrainingTypeSelected()[pri:18, instance:com.HRMS.Scripts.TrainingTest@560348e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyTrainingTypeUpdated()[pri:19, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:55:56 AEST" name="verifyTrainingTypeUpdated" description="verifying the training type is updated" finished-at="2023-04-18T10:55:58 AEST" duration-ms="1675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTrainingTypeUpdated -->
-        <test-method signature="verifyContactNumberVisibility()[pri:20, instance:com.HRMS.Scripts.TrainingTest@72ade7e3]" started-at="2023-04-17T11:29:44 AEST" name="verifyContactNumberVisibility" description="verify the given contact number is added" finished-at="2023-04-17T11:29:48 AEST" duration-ms="4337" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:55:58 AEST" name="afterMethod" finished-at="2023-04-18T10:55:58 AEST" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTrainingTypeUpdated status=SUCCESS method=TrainingTest.verifyTrainingTypeUpdated()[pri:19, instance:com.HRMS.Scripts.TrainingTest@560348e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyContactNumberVisibility()[pri:20, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:55:58 AEST" name="verifyContactNumberVisibility" description="verify the given contact number is added" finished-at="2023-04-18T10:56:01 AEST" duration-ms="3531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactNumberVisibility -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.TrainingTest@560348e6]" started-at="2023-04-18T10:56:01 AEST" name="afterMethod" finished-at="2023-04-18T10:56:01 AEST" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyContactNumberVisibility status=SUCCESS method=TrainingTest.verifyContactNumberVisibility()[pri:20, instance:com.HRMS.Scripts.TrainingTest@560348e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.HRMS.Scripts.TrainingTest -->
       <class name="com.HRMS.Scripts.ProjectManagerTest">
-        <test-method signature="verifyProjectCount()[pri:21, instance:com.HRMS.Scripts.ProjectManagerTest@239105a8]" started-at="2023-04-17T11:29:48 AEST" name="verifyProjectCount" description="verify the project count" finished-at="2023-04-17T11:29:51 AEST" duration-ms="3500" status="PASS">
+        <test-method signature="verifyProjectCount()[pri:21, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" started-at="2023-04-18T10:56:01 AEST" name="verifyProjectCount" description="verify the project count" finished-at="2023-04-18T10:56:06 AEST" duration-ms="4374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProjectCount -->
-        <test-method signature="verifyCountrySelection()[pri:22, instance:com.HRMS.Scripts.ProjectManagerTest@239105a8]" started-at="2023-04-17T11:29:51 AEST" name="verifyCountrySelection" description="verify the given country is selected" finished-at="2023-04-17T11:29:55 AEST" duration-ms="3867" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" started-at="2023-04-18T10:56:06 AEST" name="afterMethod" finished-at="2023-04-18T10:56:06 AEST" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProjectCount status=SUCCESS method=ProjectManagerTest.verifyProjectCount()[pri:21, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyCountrySelection()[pri:22, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" started-at="2023-04-18T10:56:06 AEST" name="verifyCountrySelection" description="verify the given country is selected" finished-at="2023-04-18T10:56:10 AEST" duration-ms="4104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCountrySelection -->
-        <test-method signature="verifyTaxTypeEntered()[pri:23, instance:com.HRMS.Scripts.ProjectManagerTest@239105a8]" started-at="2023-04-17T11:29:55 AEST" name="verifyTaxTypeEntered" description="verify the added tax type" finished-at="2023-04-17T11:29:59 AEST" duration-ms="3724" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" started-at="2023-04-18T10:56:10 AEST" name="afterMethod" finished-at="2023-04-18T10:56:10 AEST" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCountrySelection status=SUCCESS method=ProjectManagerTest.verifyCountrySelection()[pri:22, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyTaxTypeEntered()[pri:23, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" started-at="2023-04-18T10:56:10 AEST" name="verifyTaxTypeEntered" description="verify the added tax type" finished-at="2023-04-18T10:56:13 AEST" duration-ms="2955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTaxTypeEntered -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8]" started-at="2023-04-18T10:56:13 AEST" name="afterMethod" finished-at="2023-04-18T10:56:14 AEST" duration-ms="230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTaxTypeEntered status=SUCCESS method=ProjectManagerTest.verifyTaxTypeEntered()[pri:23, instance:com.HRMS.Scripts.ProjectManagerTest@1df8b5b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.HRMS.Scripts.ProjectManagerTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
